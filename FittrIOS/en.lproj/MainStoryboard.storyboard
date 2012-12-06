@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
     </dependencies>
@@ -33,16 +33,23 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="faf-b2-dRe">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="264" id="vnx-fB-sBi"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="42f-er-mj7" firstAttribute="trailing" secondItem="OmQ-q1-QLC" secondAttribute="trailing" type="default" id="9Yn-Ke-jgv"/>
                             <constraint firstItem="4w4-EA-ymb" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="Btq-T8-Myc"/>
-                            <constraint firstItem="OmQ-q1-QLC" firstAttribute="centerX" secondItem="4w4-EA-ymb" secondAttribute="centerX" type="default" id="CLF-RT-xGv"/>
                             <constraint firstItem="4w4-EA-ymb" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="F8t-1u-AOT"/>
                             <constraint firstAttribute="bottom" secondItem="42f-er-mj7" secondAttribute="bottom" constant="116" id="HWt-sQ-GJs"/>
+                            <constraint firstItem="faf-b2-dRe" firstAttribute="top" secondItem="3" secondAttribute="top" constant="11" id="TYu-dS-tYZ"/>
                             <constraint firstItem="OmQ-q1-QLC" firstAttribute="leading" secondItem="42f-er-mj7" secondAttribute="leading" type="default" id="bvq-FT-nSx"/>
                             <constraint firstItem="4w4-EA-ymb" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="dQP-Hy-w6R"/>
+                            <constraint firstItem="faf-b2-dRe" firstAttribute="centerX" secondItem="4w4-EA-ymb" secondAttribute="centerX" type="default" id="gGx-dQ-Jcw"/>
+                            <constraint firstItem="faf-b2-dRe" firstAttribute="centerX" secondItem="OmQ-q1-QLC" secondAttribute="centerX" type="default" id="n38-SP-R5v"/>
                             <constraint firstAttribute="bottom" secondItem="OmQ-q1-QLC" secondAttribute="bottom" constant="198" id="p3G-QU-4u1"/>
                             <constraint firstItem="4w4-EA-ymb" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="vnU-0J-o66"/>
                         </constraints>
@@ -54,6 +61,7 @@
     </scenes>
     <resources>
         <image name="fittr wallpaper.PNG" width="1920" height="1080"/>
+        <image name="logo.png" width="267" height="174"/>
     </resources>
     <classes>
         <class className="NSLayoutConstraint" superclassName="NSObject">
