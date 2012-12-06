@@ -102,7 +102,7 @@
                             <constraint firstItem="IIi-2i-7k3" firstAttribute="trailing" secondItem="frb-Ew-X2Y" secondAttribute="trailing" type="default" id="USe-Ms-1gE"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Feed" image="feed@2x.png" id="AJx-KP-Lmb"/>
+                    <tabBarItem key="tabBarItem" title="Feed" image="feed.png" id="AJx-KP-Lmb"/>
                     <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xEa-73-6Gs" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -130,7 +130,7 @@
                             <constraint firstItem="UtR-b2-bK0" firstAttribute="trailing" secondItem="9p3-Ro-aav" secondAttribute="trailing" type="default" id="gtR-wm-rG4"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="You" image="you@2x.png" id="tyQ-7y-Zry"/>
+                    <tabBarItem key="tabBarItem" title="You" image="you.png" id="tyQ-7y-Zry"/>
                     <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kiR-fG-u44" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -184,7 +184,7 @@
                             <outlet property="delegate" destination="RaY-cS-CcR" id="Gvh-WI-dq6"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Workouts" image="workouts@2x.png" id="Wen-WT-GBf"/>
+                    <tabBarItem key="tabBarItem" title="Workouts" image="workouts.png" id="Wen-WT-GBf"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
                     <nil key="simulatedTopBarMetrics"/>
                 </tableViewController>
@@ -213,7 +213,7 @@
                             <constraint firstItem="leh-CP-T3d" firstAttribute="leading" secondItem="0Pl-ru-sb9" secondAttribute="leading" type="default" id="wSL-cD-tls"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Settings" image="settings@2x.png" id="HdV-Uh-8i4"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="settings.png" id="HdV-Uh-8i4"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
                     <nil key="simulatedTopBarMetrics"/>
                 </viewController>
@@ -242,7 +242,7 @@
                             <constraint firstItem="r33-Iy-aq6" firstAttribute="top" secondItem="ssz-1i-dYe" secondAttribute="top" type="default" id="hIq-8a-E0v"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Alexis" image="alexis@2x.png" id="kG8-KW-Gbg"/>
+                    <tabBarItem key="tabBarItem" title="Alexis" image="alexis.png" id="kG8-KW-Gbg"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
                     <nil key="simulatedTopBarMetrics"/>
                 </viewController>
@@ -252,13 +252,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="alexis@2x.png" width="50" height="57"/>
-        <image name="feed@2x.png" width="51" height="38"/>
+        <image name="alexis.png" width="25" height="29"/>
+        <image name="feed.png" width="33" height="24"/>
         <image name="fittr wallpaper.PNG" width="1920" height="1080"/>
         <image name="logo@2x.png" width="534" height="347"/>
-        <image name="settings@2x.png" width="50" height="50"/>
-        <image name="workouts@2x.png" width="54" height="34"/>
-        <image name="you@2x.png" width="48" height="46"/>
+        <image name="settings.png" width="29" height="29"/>
+        <image name="workouts.png" width="48" height="30"/>
+        <image name="you.png" width="28" height="26"/>
     </resources>
     <classes>
         <class className="NSLayoutConstraint" superclassName="NSObject">
