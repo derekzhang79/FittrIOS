@@ -18,6 +18,10 @@
 		2A8DA7CA16701D6200A105F6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A8DA7C916701D6200A105F6 /* Default-568h@2x.png */; };
 		2A8DA7CD16701D6200A105F6 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A8DA7CB16701D6200A105F6 /* MainStoryboard.storyboard */; };
 		2A8DA7D016701D6200A105F6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A8DA7CF16701D6200A105F6 /* ViewController.m */; };
+		2AF13CD21670201F00B04ABB /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AF13CD11670201F00B04ABB /* FacebookSDK.framework */; };
+		2AF13CD61670202500B04ABB /* FacebookSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2AF13CD41670202500B04ABB /* FacebookSDKResources.bundle */; };
+		2AF13CD71670202500B04ABB /* FBUserSettingsViewResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2AF13CD51670202500B04ABB /* FBUserSettingsViewResources.bundle */; };
+		2AF13CDB1670205500B04ABB /* fittr wallpaper.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 2AF13CDA1670205500B04ABB /* fittr wallpaper.PNG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +41,10 @@
 		2A8DA7CC16701D6200A105F6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		2A8DA7CE16701D6200A105F6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		2A8DA7CF16701D6200A105F6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2AF13CD11670201F00B04ABB /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		2AF13CD41670202500B04ABB /* FacebookSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FacebookSDKResources.bundle; sourceTree = "<group>"; };
+		2AF13CD51670202500B04ABB /* FBUserSettingsViewResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FBUserSettingsViewResources.bundle; sourceTree = "<group>"; };
+		2AF13CDA1670205500B04ABB /* fittr wallpaper.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fittr wallpaper.PNG"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +55,7 @@
 				2A8DA7B416701D6200A105F6 /* UIKit.framework in Frameworks */,
 				2A8DA7B616701D6200A105F6 /* Foundation.framework in Frameworks */,
 				2A8DA7B816701D6200A105F6 /* CoreGraphics.framework in Frameworks */,
+				2AF13CD21670201F00B04ABB /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +82,9 @@
 		2A8DA7B216701D6200A105F6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2AF13CD41670202500B04ABB /* FacebookSDKResources.bundle */,
+				2AF13CD51670202500B04ABB /* FBUserSettingsViewResources.bundle */,
+				2AF13CD11670201F00B04ABB /* FacebookSDK.framework */,
 				2A8DA7B316701D6200A105F6 /* UIKit.framework */,
 				2A8DA7B516701D6200A105F6 /* Foundation.framework */,
 				2A8DA7B716701D6200A105F6 /* CoreGraphics.framework */,
@@ -96,6 +108,7 @@
 		2A8DA7BA16701D6200A105F6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2AF13CD91670203B00B04ABB /* Images */,
 				2A8DA7BB16701D6200A105F6 /* FittrIOS-Info.plist */,
 				2A8DA7BC16701D6200A105F6 /* InfoPlist.strings */,
 				2A8DA7BF16701D6200A105F6 /* main.m */,
@@ -105,6 +118,14 @@
 				2A8DA7C916701D6200A105F6 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2AF13CD91670203B00B04ABB /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				2AF13CDA1670205500B04ABB /* fittr wallpaper.PNG */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +184,9 @@
 				2A8DA7C816701D6200A105F6 /* Default@2x.png in Resources */,
 				2A8DA7CA16701D6200A105F6 /* Default-568h@2x.png in Resources */,
 				2A8DA7CD16701D6200A105F6 /* MainStoryboard.storyboard in Resources */,
+				2AF13CD61670202500B04ABB /* FacebookSDKResources.bundle in Resources */,
+				2AF13CD71670202500B04ABB /* FBUserSettingsViewResources.bundle in Resources */,
+				2AF13CDB1670205500B04ABB /* fittr wallpaper.PNG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +278,10 @@
 		2A8DA7D416701D6200A105F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FittrIOS/FittrIOS-Prefix.pch";
 				INFOPLIST_FILE = "FittrIOS/FittrIOS-Info.plist";
@@ -265,6 +293,10 @@
 		2A8DA7D516701D6200A105F6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FittrIOS/FittrIOS-Prefix.pch";
 				INFOPLIST_FILE = "FittrIOS/FittrIOS-Info.plist";
@@ -292,6 +324,7 @@
 				2A8DA7D516701D6200A105F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
