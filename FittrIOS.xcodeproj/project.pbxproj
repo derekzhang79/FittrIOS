@@ -1,0 +1,299 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A8DA7B416701D6200A105F6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A8DA7B316701D6200A105F6 /* UIKit.framework */; };
+		2A8DA7B616701D6200A105F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A8DA7B516701D6200A105F6 /* Foundation.framework */; };
+		2A8DA7B816701D6200A105F6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A8DA7B716701D6200A105F6 /* CoreGraphics.framework */; };
+		2A8DA7BE16701D6200A105F6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2A8DA7BC16701D6200A105F6 /* InfoPlist.strings */; };
+		2A8DA7C016701D6200A105F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A8DA7BF16701D6200A105F6 /* main.m */; };
+		2A8DA7C416701D6200A105F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A8DA7C316701D6200A105F6 /* AppDelegate.m */; };
+		2A8DA7C616701D6200A105F6 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A8DA7C516701D6200A105F6 /* Default.png */; };
+		2A8DA7C816701D6200A105F6 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A8DA7C716701D6200A105F6 /* Default@2x.png */; };
+		2A8DA7CA16701D6200A105F6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A8DA7C916701D6200A105F6 /* Default-568h@2x.png */; };
+		2A8DA7CD16701D6200A105F6 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A8DA7CB16701D6200A105F6 /* MainStoryboard.storyboard */; };
+		2A8DA7D016701D6200A105F6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A8DA7CF16701D6200A105F6 /* ViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2A8DA7AF16701D6200A105F6 /* FittrIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FittrIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A8DA7B316701D6200A105F6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2A8DA7B516701D6200A105F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2A8DA7B716701D6200A105F6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2A8DA7BB16701D6200A105F6 /* FittrIOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FittrIOS-Info.plist"; sourceTree = "<group>"; };
+		2A8DA7BD16701D6200A105F6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2A8DA7BF16701D6200A105F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2A8DA7C116701D6200A105F6 /* FittrIOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FittrIOS-Prefix.pch"; sourceTree = "<group>"; };
+		2A8DA7C216701D6200A105F6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2A8DA7C316701D6200A105F6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2A8DA7C516701D6200A105F6 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		2A8DA7C716701D6200A105F6 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		2A8DA7C916701D6200A105F6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2A8DA7CC16701D6200A105F6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		2A8DA7CE16701D6200A105F6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2A8DA7CF16701D6200A105F6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A8DA7AC16701D6200A105F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A8DA7B416701D6200A105F6 /* UIKit.framework in Frameworks */,
+				2A8DA7B616701D6200A105F6 /* Foundation.framework in Frameworks */,
+				2A8DA7B816701D6200A105F6 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A8DA7A416701D6200A105F6 = {
+			isa = PBXGroup;
+			children = (
+				2A8DA7B916701D6200A105F6 /* FittrIOS */,
+				2A8DA7B216701D6200A105F6 /* Frameworks */,
+				2A8DA7B016701D6200A105F6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2A8DA7B016701D6200A105F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A8DA7AF16701D6200A105F6 /* FittrIOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A8DA7B216701D6200A105F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A8DA7B316701D6200A105F6 /* UIKit.framework */,
+				2A8DA7B516701D6200A105F6 /* Foundation.framework */,
+				2A8DA7B716701D6200A105F6 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2A8DA7B916701D6200A105F6 /* FittrIOS */ = {
+			isa = PBXGroup;
+			children = (
+				2A8DA7C216701D6200A105F6 /* AppDelegate.h */,
+				2A8DA7C316701D6200A105F6 /* AppDelegate.m */,
+				2A8DA7CB16701D6200A105F6 /* MainStoryboard.storyboard */,
+				2A8DA7CE16701D6200A105F6 /* ViewController.h */,
+				2A8DA7CF16701D6200A105F6 /* ViewController.m */,
+				2A8DA7BA16701D6200A105F6 /* Supporting Files */,
+			);
+			path = FittrIOS;
+			sourceTree = "<group>";
+		};
+		2A8DA7BA16701D6200A105F6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2A8DA7BB16701D6200A105F6 /* FittrIOS-Info.plist */,
+				2A8DA7BC16701D6200A105F6 /* InfoPlist.strings */,
+				2A8DA7BF16701D6200A105F6 /* main.m */,
+				2A8DA7C116701D6200A105F6 /* FittrIOS-Prefix.pch */,
+				2A8DA7C516701D6200A105F6 /* Default.png */,
+				2A8DA7C716701D6200A105F6 /* Default@2x.png */,
+				2A8DA7C916701D6200A105F6 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2A8DA7AE16701D6200A105F6 /* FittrIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A8DA7D316701D6200A105F6 /* Build configuration list for PBXNativeTarget "FittrIOS" */;
+			buildPhases = (
+				2A8DA7AB16701D6200A105F6 /* Sources */,
+				2A8DA7AC16701D6200A105F6 /* Frameworks */,
+				2A8DA7AD16701D6200A105F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FittrIOS;
+			productName = FittrIOS;
+			productReference = 2A8DA7AF16701D6200A105F6 /* FittrIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A8DA7A616701D6200A105F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = GndFloor;
+			};
+			buildConfigurationList = 2A8DA7A916701D6200A105F6 /* Build configuration list for PBXProject "FittrIOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2A8DA7A416701D6200A105F6;
+			productRefGroup = 2A8DA7B016701D6200A105F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2A8DA7AE16701D6200A105F6 /* FittrIOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2A8DA7AD16701D6200A105F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A8DA7BE16701D6200A105F6 /* InfoPlist.strings in Resources */,
+				2A8DA7C616701D6200A105F6 /* Default.png in Resources */,
+				2A8DA7C816701D6200A105F6 /* Default@2x.png in Resources */,
+				2A8DA7CA16701D6200A105F6 /* Default-568h@2x.png in Resources */,
+				2A8DA7CD16701D6200A105F6 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A8DA7AB16701D6200A105F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A8DA7C016701D6200A105F6 /* main.m in Sources */,
+				2A8DA7C416701D6200A105F6 /* AppDelegate.m in Sources */,
+				2A8DA7D016701D6200A105F6 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2A8DA7BC16701D6200A105F6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A8DA7BD16701D6200A105F6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2A8DA7CB16701D6200A105F6 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A8DA7CC16701D6200A105F6 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2A8DA7D116701D6200A105F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2A8DA7D216701D6200A105F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2A8DA7D416701D6200A105F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FittrIOS/FittrIOS-Prefix.pch";
+				INFOPLIST_FILE = "FittrIOS/FittrIOS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2A8DA7D516701D6200A105F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FittrIOS/FittrIOS-Prefix.pch";
+				INFOPLIST_FILE = "FittrIOS/FittrIOS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A8DA7A916701D6200A105F6 /* Build configuration list for PBXProject "FittrIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A8DA7D116701D6200A105F6 /* Debug */,
+				2A8DA7D216701D6200A105F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A8DA7D316701D6200A105F6 /* Build configuration list for PBXNativeTarget "FittrIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A8DA7D416701D6200A105F6 /* Debug */,
+				2A8DA7D516701D6200A105F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A8DA7A616701D6200A105F6 /* Project object */;
+}
