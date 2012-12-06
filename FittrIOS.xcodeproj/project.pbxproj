@@ -22,6 +22,7 @@
 		2AF13CD61670202500B04ABB /* FacebookSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2AF13CD41670202500B04ABB /* FacebookSDKResources.bundle */; };
 		2AF13CD71670202500B04ABB /* FBUserSettingsViewResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2AF13CD51670202500B04ABB /* FBUserSettingsViewResources.bundle */; };
 		2AF13CDB1670205500B04ABB /* fittr wallpaper.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 2AF13CDA1670205500B04ABB /* fittr wallpaper.PNG */; };
+		2AF13CDD167020E300B04ABB /* workout.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2AF13CDC167020E300B04ABB /* workout.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		2AF13CD41670202500B04ABB /* FacebookSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FacebookSDKResources.bundle; sourceTree = "<group>"; };
 		2AF13CD51670202500B04ABB /* FBUserSettingsViewResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FBUserSettingsViewResources.bundle; sourceTree = "<group>"; };
 		2AF13CDA1670205500B04ABB /* fittr wallpaper.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fittr wallpaper.PNG"; sourceTree = "<group>"; };
+		2AF13CDC167020E300B04ABB /* workout.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = workout.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 		2AF13CD91670203B00B04ABB /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				2AF13CDC167020E300B04ABB /* workout.jpg */,
 				2AF13CDA1670205500B04ABB /* fittr wallpaper.PNG */,
 			);
 			name = Images;
@@ -187,6 +190,7 @@
 				2AF13CD61670202500B04ABB /* FacebookSDKResources.bundle in Resources */,
 				2AF13CD71670202500B04ABB /* FBUserSettingsViewResources.bundle in Resources */,
 				2AF13CDB1670205500B04ABB /* fittr wallpaper.PNG in Resources */,
+				2AF13CDD167020E300B04ABB /* workout.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
