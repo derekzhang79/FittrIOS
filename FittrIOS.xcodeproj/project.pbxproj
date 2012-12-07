@@ -47,6 +47,7 @@
 		914994F01670227000F88B2F /* youhighlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 914994DA1670227000F88B2F /* youhighlighted@2x.png */; };
 		914994F4167022A600F88B2F /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 914994F2167022A600F88B2F /* logo.png */; };
 		914994F5167022A600F88B2F /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 914994F3167022A600F88B2F /* logo@2x.png */; };
+		91BD7AF916718B85008423D3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 91BD7AF816718B85008423D3 /* Default.png */; };
 		91E1463516703AE300322939 /* applogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 91E1463416703AE300322939 /* applogo@2x.png */; };
 		91E1463816703B0700322939 /* applogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 91E1463716703B0700322939 /* applogo.png */; };
 /* End PBXBuildFile section */
@@ -97,6 +98,7 @@
 		914994DA1670227000F88B2F /* youhighlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "youhighlighted@2x.png"; sourceTree = "<group>"; };
 		914994F2167022A600F88B2F /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		914994F3167022A600F88B2F /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
+		91BD7AF816718B85008423D3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		91E1463416703AE300322939 /* applogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "applogo@2x.png"; sourceTree = "<group>"; };
 		91E1463716703B0700322939 /* applogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = applogo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,6 +121,7 @@
 		2A8DA7A416701D6200A105F6 = {
 			isa = PBXGroup;
 			children = (
+				91BD7AF816718B85008423D3 /* Default.png */,
 				91E1463716703B0700322939 /* applogo.png */,
 				91E1463416703AE300322939 /* applogo@2x.png */,
 				2A8DA7B916701D6200A105F6 /* FittrIOS */,
@@ -295,6 +298,7 @@
 				914994F5167022A600F88B2F /* logo@2x.png in Resources */,
 				91E1463516703AE300322939 /* applogo@2x.png in Resources */,
 				91E1463816703B0700322939 /* applogo.png in Resources */,
+				91BD7AF916718B85008423D3 /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
