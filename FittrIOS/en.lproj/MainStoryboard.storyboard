@@ -21,7 +21,7 @@
             </objects>
             <point key="canvasLocation" x="-197" y="169"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller - Welcome-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
@@ -29,27 +29,40 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="fittr wallpaper.PNG" translatesAutoresizingMaskIntoConstraints="NO" id="4w4-EA-ymb"/>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="42f-er-mj7">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="loginbg.png" translatesAutoresizingMaskIntoConstraints="NO" id="4w4-EA-ymb"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="42f-er-mj7">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="jSY-U5-i8H"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="I already have an account">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="I already have an account" backgroundImage="roundrectbg@2x.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <state key="highlighted">
+                                <state key="selected" backgroundImage="roundrectbgclick@2x.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="roundrectbgclick@2x.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="JJX-wP-aqr" kind="modal" id="Tr1-L4-X1O"/>
+                                    <segue destination="KaW-FT-Ti2" kind="push" id="A6a-U4-Fsf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OmQ-q1-QLC">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OmQ-q1-QLC">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="257" id="pYe-OE-Ydj"/>
+                                    <constraint firstAttribute="height" constant="51" id="w2U-go-N01"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Sign up!">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Sign up!" backgroundImage="roundrectbg@2x.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <state key="highlighted">
+                                <state key="selected" backgroundImage="roundrectbgclick@2x.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="roundrectbgclick@2x.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
@@ -62,24 +75,68 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="42f-er-mj7" firstAttribute="trailing" secondItem="OmQ-q1-QLC" secondAttribute="trailing" type="default" id="9Yn-Ke-jgv"/>
                             <constraint firstItem="4w4-EA-ymb" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="Btq-T8-Myc"/>
                             <constraint firstItem="4w4-EA-ymb" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="F8t-1u-AOT"/>
-                            <constraint firstAttribute="bottom" secondItem="42f-er-mj7" secondAttribute="bottom" constant="116" id="HWt-sQ-GJs"/>
+                            <constraint firstAttribute="bottom" secondItem="42f-er-mj7" secondAttribute="bottom" constant="122" id="IJS-N3-sp1"/>
+                            <constraint firstItem="OmQ-q1-QLC" firstAttribute="centerX" secondItem="4w4-EA-ymb" secondAttribute="centerX" type="default" id="LTy-SH-16e"/>
+                            <constraint firstItem="OmQ-q1-QLC" firstAttribute="centerX" secondItem="faf-b2-dRe" secondAttribute="centerX" type="default" id="N27-o7-4ct"/>
+                            <constraint firstItem="OmQ-q1-QLC" firstAttribute="leading" secondItem="42f-er-mj7" secondAttribute="leading" type="default" id="NJD-QH-8Nj"/>
                             <constraint firstItem="faf-b2-dRe" firstAttribute="top" secondItem="3" secondAttribute="top" constant="11" id="TYu-dS-tYZ"/>
-                            <constraint firstItem="OmQ-q1-QLC" firstAttribute="leading" secondItem="42f-er-mj7" secondAttribute="leading" type="default" id="bvq-FT-nSx"/>
                             <constraint firstItem="4w4-EA-ymb" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="dQP-Hy-w6R"/>
-                            <constraint firstItem="faf-b2-dRe" firstAttribute="centerX" secondItem="4w4-EA-ymb" secondAttribute="centerX" type="default" id="gGx-dQ-Jcw"/>
-                            <constraint firstItem="faf-b2-dRe" firstAttribute="centerX" secondItem="OmQ-q1-QLC" secondAttribute="centerX" type="default" id="n38-SP-R5v"/>
-                            <constraint firstAttribute="bottom" secondItem="OmQ-q1-QLC" secondAttribute="bottom" constant="198" id="p3G-QU-4u1"/>
+                            <constraint firstAttribute="bottom" secondItem="OmQ-q1-QLC" secondAttribute="bottom" constant="197" id="htY-sf-pmF"/>
+                            <constraint firstItem="OmQ-q1-QLC" firstAttribute="trailing" secondItem="42f-er-mj7" secondAttribute="trailing" type="default" id="rco-x2-dnh"/>
                             <constraint firstItem="4w4-EA-ymb" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="vnU-0J-o66"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="uY4-E3-r8G"/>
+                    <navigationItem key="navigationItem" title="Welcome" id="uY4-E3-r8G"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="393" y="169"/>
+        </scene>
+        <!--View Controller - Login-->
+        <scene sceneID="2zc-dv-GwW">
+            <objects>
+                <viewController id="KaW-FT-Ti2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0su-dh-KAw">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="loginbg.png" translatesAutoresizingMaskIntoConstraints="NO" id="3hM-G4-RXg"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ra6-hP-jOL">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="PeQ-0Q-meV"/>
+                                    <constraint firstAttribute="width" constant="246" id="oyo-bN-ekX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="connectwfb@2x.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" backgroundImage="connectwfbclick@2x.png"/>
+                                <state key="highlighted" backgroundImage="connectwfbclick@2x.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="JJX-wP-aqr" kind="modal" id="KuB-0k-3Pf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3hM-G4-RXg" firstAttribute="top" secondItem="0su-dh-KAw" secondAttribute="top" type="default" id="I29-Q3-cVc"/>
+                            <constraint firstItem="3hM-G4-RXg" firstAttribute="trailing" secondItem="0su-dh-KAw" secondAttribute="trailing" type="default" id="NWn-vb-ePC"/>
+                            <constraint firstItem="3hM-G4-RXg" firstAttribute="leading" secondItem="0su-dh-KAw" secondAttribute="leading" type="default" id="Yvm-Es-tc2"/>
+                            <constraint firstItem="3hM-G4-RXg" firstAttribute="bottom" secondItem="0su-dh-KAw" secondAttribute="bottom" type="default" id="dJc-2D-hyN"/>
+                            <constraint firstItem="Ra6-hP-jOL" firstAttribute="top" secondItem="0su-dh-KAw" secondAttribute="top" constant="27" id="ee6-gw-iGS"/>
+                            <constraint firstItem="Ra6-hP-jOL" firstAttribute="centerX" secondItem="3hM-G4-RXg" secondAttribute="centerX" type="default" id="qXL-sX-j8h"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Login" id="nhU-pM-Ob5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2fp-Li-GpB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928" y="834"/>
         </scene>
         <!--View Controller - Feed-->
         <scene sceneID="Jfh-6X-HZ3">
@@ -107,7 +164,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xEa-73-6Gs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1530" y="-489"/>
+            <point key="canvasLocation" x="2170" y="735"/>
         </scene>
         <!--View Controller - You-->
         <scene sceneID="XLP-Mv-eOZ">
@@ -135,7 +192,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kiR-fG-u44" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1530" y="-1141"/>
+            <point key="canvasLocation" x="2170" y="83"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Ouk-Iu-fzV">
@@ -158,7 +215,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6iP-rK-ZaL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="972" y="177"/>
+            <point key="canvasLocation" x="1612" y="1401"/>
         </scene>
         <!--Table View Controller - Workouts-->
         <scene sceneID="7ys-L4-n5M">
@@ -184,13 +241,13 @@
                             <outlet property="delegate" destination="RaY-cS-CcR" id="Gvh-WI-dq6"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Workouts" image="workouts.png" id="Wen-WT-GBf"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="settings.png" id="Wen-WT-GBf"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
                     <nil key="simulatedTopBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E1E-dz-Skf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1530" y="177"/>
+            <point key="canvasLocation" x="2162" y="2821"/>
         </scene>
         <!--View Controller - Settings-->
         <scene sceneID="Evg-bj-aoI">
@@ -202,24 +259,24 @@
                         <subviews>
                             <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" translatesAutoresizingMaskIntoConstraints="NO" id="leh-CP-T3d">
                                 <items>
-                                    <navigationItem title="Settings" id="ZqG-B7-U2G"/>
+                                    <navigationItem title="Alexis" id="ZqG-B7-U2G"/>
                                 </items>
                             </navigationBar>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="leh-CP-T3d" firstAttribute="trailing" secondItem="0Pl-ru-sb9" secondAttribute="trailing" type="default" id="Wzc-1S-7dQ"/>
                             <constraint firstItem="leh-CP-T3d" firstAttribute="top" secondItem="0Pl-ru-sb9" secondAttribute="top" type="default" id="wAZ-ch-Sx5"/>
                             <constraint firstItem="leh-CP-T3d" firstAttribute="leading" secondItem="0Pl-ru-sb9" secondAttribute="leading" type="default" id="wSL-cD-tls"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Settings" image="settings.png" id="HdV-Uh-8i4"/>
+                    <tabBarItem key="tabBarItem" title="Alexis" image="alexis.png" id="HdV-Uh-8i4"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
                     <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CpG-yJ-GNt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1530" y="1553"/>
+            <point key="canvasLocation" x="2162" y="2105"/>
         </scene>
         <!--View Controller - Alexis-->
         <scene sceneID="jfO-EQ-nGE">
@@ -231,35 +288,47 @@
                         <subviews>
                             <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" translatesAutoresizingMaskIntoConstraints="NO" id="r33-Iy-aq6">
                                 <items>
-                                    <navigationItem title="Alexis" id="1oc-37-00h"/>
+                                    <navigationItem title="Workouts" id="1oc-37-00h"/>
                                 </items>
                             </navigationBar>
                         </subviews>
-                        <color key="backgroundColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="r33-Iy-aq6" firstAttribute="leading" secondItem="ssz-1i-dYe" secondAttribute="leading" type="default" id="03l-0b-nCM"/>
                             <constraint firstItem="r33-Iy-aq6" firstAttribute="trailing" secondItem="ssz-1i-dYe" secondAttribute="trailing" type="default" id="Ygk-6w-XLR"/>
                             <constraint firstItem="r33-Iy-aq6" firstAttribute="top" secondItem="ssz-1i-dYe" secondAttribute="top" type="default" id="hIq-8a-E0v"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Alexis" image="alexis.png" id="kG8-KW-Gbg"/>
+                    <tabBarItem key="tabBarItem" title="Workouts" image="workouts.png" id="kG8-KW-Gbg"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
                     <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HZU-KI-fHS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1530" y="901"/>
+            <point key="canvasLocation" x="2170" y="1401"/>
         </scene>
     </scenes>
     <resources>
         <image name="alexis.png" width="25" height="29"/>
+        <image name="connectwfb@2x.png" width="492" height="90"/>
+        <image name="connectwfbclick@2x.png" width="492" height="90"/>
         <image name="feed.png" width="33" height="24"/>
-        <image name="fittr wallpaper.PNG" width="1920" height="1080"/>
+        <image name="loginbg.png" width="640" height="1013"/>
         <image name="logo@2x.png" width="534" height="347"/>
+        <image name="roundrectbg@2x.png" width="556" height="91"/>
+        <image name="roundrectbgclick@2x.png" width="556" height="91"/>
         <image name="settings.png" width="29" height="29"/>
         <image name="workouts.png" width="48" height="30"/>
         <image name="you.png" width="28" height="26"/>
     </resources>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
