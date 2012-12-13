@@ -8,7 +8,99 @@
 
 #import "AppDelegate.h"
 
+NSString *const FBSessionStateChangedNotification =
+@"com.gndfloor.Login:FBSessionStateChangedNotification";
+
+
 @implementation AppDelegate
+
+/*
+ * Callback for session changes.
+ */
+- (void)sessionStateChanged:(FBSession *)session
+                      state:(FBSessionState) state
+                      error:(NSError *)error
+{
+    switch (state) {
+        case FBSessionStateOpen:
+            if (!error) {
+                // We have a valid session
+                NSLog(@"User session found");
+                
+                if (FBSession.activeSession.isOpen) {
+                    NSLog(@"Good");
+                    
+                    [FBRequestConnection
+                     startForMeWithCompletionHandler:^(FBRequestConnection *connection,
+                                                       id<FBGraphUser> user,
+                                                       NSError *error) {
+                         if (!error) {
+                             NSString *userInfo = @"";
+                             
+                             // Example: typed access (name)
+                             // - no special permissions required
+                             userInfo = [userInfo
+                                         stringByAppendingString:
+                                         [NSString stringWithFormat:@"Name: %@\n\n",
+                                          user.name]];
+                             
+                             userInfo = [userInfo
+                                         stringByAppendingString:
+                                         [NSString stringWithFormat:@"Birthday: %@\n\n",
+                                          [user location]]];
+                             
+                             userInfo = [userInfo
+                                         stringByAppendingString:
+                                         [NSString stringWithFormat:@"Birthday: %@\n\n",
+                                          [user id]]];
+                             
+                             userInfo = [NSString stringWithFormat:@"%@", FBSession.activeSession.accessToken];
+                             
+                             NSLog(@"%@", userInfo);
+                             
+                         }
+                     }];
+                    
+                }
+            }
+            break;
+        case FBSessionStateClosed:
+        case FBSessionStateClosedLoginFailed:
+            [FBSession.activeSession closeAndClearTokenInformation];
+            break;
+        default:
+            break;
+    }
+    
+    [[NSNotificationCenter defaultCenter]
+     postNotificationName:FBSessionStateChangedNotification
+     object:session];
+    
+    if (error) {
+        UIAlertView *alertView = [[UIAlertView alloc]
+                                  initWithTitle:@"Error"
+                                  message:error.localizedDescription
+                                  delegate:nil
+                                  cancelButtonTitle:@"OK"
+                                  otherButtonTitles:nil];
+        [alertView show];
+    }
+}
+
+/*
+ * Opens a Facebook session and optionally shows the login UX.
+ */
+- (BOOL)openSessionWithAllowLoginUI:(BOOL)allowLoginUI {
+    return [FBSession openActiveSessionWithReadPermissions:nil
+                                              allowLoginUI:allowLoginUI
+                                         completionHandler:^(FBSession *session,
+                                                             FBSessionState state,
+                                                             NSError *error) {
+                                             [self sessionStateChanged:session
+                                                                 state:state
+                                                                 error:error];
+                                         }];
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
