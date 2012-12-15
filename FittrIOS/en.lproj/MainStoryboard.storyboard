@@ -648,7 +648,7 @@
                             <constraint firstItem="3ch-lL-k2h" firstAttribute="top" secondItem="3gu-sS-Uh9" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="uum-4b-HqR"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Workouts" image="workouts.png" id="kG8-KW-Gbg"/>
+                    <tabBarItem key="tabBarItem" title="Workouts" image="workout.png" id="kG8-KW-Gbg"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
                     <nil key="simulatedTopBarMetrics"/>
                 </viewController>
@@ -658,20 +658,28 @@
         </scene>
     </scenes>
     <resources>
-        <image name="alexis.png" width="25" height="29"/>
+        <image name="alexis.png" width="80" height="80"/>
         <image name="connectwfb@2x.png" width="492" height="90"/>
         <image name="connectwfbclick@2x.png" width="492" height="90"/>
-        <image name="feed.png" width="33" height="24"/>
+        <image name="feed.png" width="80" height="80"/>
         <image name="loginbg.png" width="640" height="1013"/>
         <image name="logo@2x.png" width="534" height="347"/>
         <image name="roundrectbg@2x.png" width="556" height="91"/>
         <image name="roundrectbgclick@2x.png" width="556" height="91"/>
-        <image name="settings.png" width="29" height="29"/>
+        <image name="settings.png" width="80" height="80"/>
         <image name="startworkout@2x.png" width="600" height="125"/>
         <image name="startworkoutclick@2x.png" width="600" height="125"/>
-        <image name="workouts.png" width="48" height="30"/>
-        <image name="you.png" width="28" height="26"/>
+        <image name="workout.png" width="80" height="80"/>
+        <image name="you.png" width="80" height="80"/>
     </resources>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
