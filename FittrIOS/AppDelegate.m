@@ -106,6 +106,8 @@ NSString *const FBSessionStateChangedNotification =
 {
     //Colors
     UIColor *lightBlue = [UIColor colorWithRed:0.062745 green:0.447059 blue:0.549020 alpha:1];
+    
+    //Tab bar
     UITabBar *tabBar = [UITabBar appearance];
     [tabBar setSelectedImageTintColor: lightBlue];
     
