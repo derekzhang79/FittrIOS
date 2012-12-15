@@ -26,7 +26,6 @@
 		2AF13CD21670201F00B04ABB /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AF13CD11670201F00B04ABB /* FacebookSDK.framework */; };
 		2AF13CD61670202500B04ABB /* FacebookSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2AF13CD41670202500B04ABB /* FacebookSDKResources.bundle */; };
 		2AF13CD71670202500B04ABB /* FBUserSettingsViewResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2AF13CD51670202500B04ABB /* FBUserSettingsViewResources.bundle */; };
-		2AF13CDB1670205500B04ABB /* fittr wallpaper.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 2AF13CDA1670205500B04ABB /* fittr wallpaper.PNG */; };
 		2AF13CDD167020E300B04ABB /* workout.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2AF13CDC167020E300B04ABB /* workout.jpg */; };
 		914994F4167022A600F88B2F /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 914994F2167022A600F88B2F /* logo.png */; };
 		914994F5167022A600F88B2F /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 914994F3167022A600F88B2F /* logo@2x.png */; };
@@ -91,7 +90,6 @@
 		2AF13CD11670201F00B04ABB /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		2AF13CD41670202500B04ABB /* FacebookSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FacebookSDKResources.bundle; sourceTree = "<group>"; };
 		2AF13CD51670202500B04ABB /* FBUserSettingsViewResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FBUserSettingsViewResources.bundle; sourceTree = "<group>"; };
-		2AF13CDA1670205500B04ABB /* fittr wallpaper.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fittr wallpaper.PNG"; sourceTree = "<group>"; };
 		2AF13CDC167020E300B04ABB /* workout.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = workout.jpg; sourceTree = "<group>"; };
 		914994F2167022A600F88B2F /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		914994F3167022A600F88B2F /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
@@ -268,7 +266,6 @@
 				914994F2167022A600F88B2F /* logo.png */,
 				914994F3167022A600F88B2F /* logo@2x.png */,
 				2AF13CDC167020E300B04ABB /* workout.jpg */,
-				2AF13CDA1670205500B04ABB /* fittr wallpaper.PNG */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -331,7 +328,6 @@
 				2A8DA7CD16701D6200A105F6 /* MainStoryboard.storyboard in Resources */,
 				2AF13CD61670202500B04ABB /* FacebookSDKResources.bundle in Resources */,
 				2AF13CD71670202500B04ABB /* FBUserSettingsViewResources.bundle in Resources */,
-				2AF13CDB1670205500B04ABB /* fittr wallpaper.PNG in Resources */,
 				2AF13CDD167020E300B04ABB /* workout.jpg in Resources */,
 				914994F4167022A600F88B2F /* logo.png in Resources */,
 				914994F5167022A600F88B2F /* logo@2x.png in Resources */,

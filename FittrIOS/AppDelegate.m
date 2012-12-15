@@ -106,6 +106,7 @@ NSString *const FBSessionStateChangedNotification =
 {
     //Colors
     UIColor *lightBlue = [UIColor colorWithRed:0.062745 green:0.447059 blue:0.549020 alpha:1];
+    UIColor *lighterBlue = [UIColor colorWithRed:0.576471 green:0.749020 blue:0.796079 alpha:1];
     
     //Tab bar
     UITabBar *tabBar = [UITabBar appearance];
@@ -116,16 +117,30 @@ NSString *const FBSessionStateChangedNotification =
     
     //Tab bar item
     UITabBarItem *tabBarItem = [UITabBarItem appearance];
+    
+    //Non selected tab bar text
     [tabBarItem setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
-                                    [UIColor whiteColor],
+                                    lighterBlue,
                                     UITextAttributeTextColor,
-                                    [UIColor whiteColor],
+                                    lighterBlue,
                                     UITextAttributeTextShadowColor,
                                     [NSValue valueWithUIOffset:UIOffsetMake(0, 0)],
                                     UITextAttributeTextShadowOffset,
                                     [UIFont fontWithName:@"HelveticaNeue LT 55 Roman" size:9.0],
                                     UITextAttributeFont,
                                     nil] forState:UIControlStateNormal];
+    
+    //Selected tab bar text
+    [tabBarItem setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+                                        [UIColor whiteColor],
+                                        UITextAttributeTextColor,
+                                        [UIColor whiteColor],
+                                        UITextAttributeTextShadowColor,
+                                        [NSValue valueWithUIOffset:UIOffsetMake(0, 0)],
+                                        UITextAttributeTextShadowOffset,
+                                        [UIFont fontWithName:@"HelveticaNeue LT 55 Roman" size:9.0],
+                                        UITextAttributeFont,
+                                        nil] forState:UIControlStateSelected];
     
     
     //Navigation bar
