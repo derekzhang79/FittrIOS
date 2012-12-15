@@ -110,6 +110,8 @@ NSString *const FBSessionStateChangedNotification =
     //Tab bar
     UITabBar *tabBar = [UITabBar appearance];
     [tabBar setSelectedImageTintColor: lightBlue];
+	[tabBar setBackgroundImage:[UIImage imageNamed:@"tabg.png"]];
+	[tabBar setSelectionIndicatorImage:[UIImage imageNamed:@"logo.png"]];
     
     
     //Navigation bar
