@@ -109,9 +109,23 @@ NSString *const FBSessionStateChangedNotification =
     
     //Tab bar
     UITabBar *tabBar = [UITabBar appearance];
-    [tabBar setSelectedImageTintColor: lightBlue];
+    [tabBar setSelectedImageTintColor: [UIColor whiteColor]];
 	[tabBar setBackgroundImage:[UIImage imageNamed:@"tabbg.png"]];
 	[tabBar setSelectionIndicatorImage:[UIImage imageNamed:@"tabselected.png"]];
+    [tabBar setTintColor:lightBlue];
+    
+    //Tab bar item
+    UITabBarItem *tabBarItem = [UITabBarItem appearance];
+    [tabBarItem setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+                                    [UIColor whiteColor],
+                                    UITextAttributeTextColor,
+                                    [UIColor whiteColor],
+                                    UITextAttributeTextShadowColor,
+                                    [NSValue valueWithUIOffset:UIOffsetMake(0, 0)],
+                                    UITextAttributeTextShadowOffset,
+                                    [UIFont fontWithName:@"HelveticaNeue LT 55 Roman" size:9.0],
+                                    UITextAttributeFont,
+                                    nil] forState:UIControlStateNormal];
     
     
     //Navigation bar
