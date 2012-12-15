@@ -104,7 +104,29 @@ NSString *const FBSessionStateChangedNotification =
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    //Colors
+    UIColor *lightBlue = [UIColor colorWithRed:0.062745 green:0.447059 blue:0.549020 alpha:1];
+    UITabBar *tabBar = [UITabBar appearance];
+    [tabBar setSelectedImageTintColor: lightBlue];
+    
+    
+    //Navigation bar
+    UINavigationBar *navBar = [UINavigationBar appearance];
+    [navBar setTintColor: lightBlue];
+    [navBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+                                                                     [UIColor clearColor],
+                                                                     UITextAttributeTextColor,
+                                                                     [UIColor whiteColor],
+                                                                     UITextAttributeTextShadowColor,
+                                                                     [NSValue valueWithUIOffset:UIOffsetMake(0, 0)],
+                                                                     UITextAttributeTextShadowOffset,
+                                                                     [UIFont fontWithName:@"Lobster 13" size:26.0],
+                                                                     UITextAttributeFont,
+                                                                     nil]];
+    
+    //Navigation bar buttons like 'back'
+    UIBarButtonItem *navBarItem = [UIBarButtonItem appearance];
+    [navBarItem setTintColor: lightBlue];
     return YES;
 }
 							
