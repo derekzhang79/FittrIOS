@@ -127,11 +127,10 @@ NSString *const FBSessionStateChangedNotification =
                                     UITextAttributeTextShadowColor,
                                     [NSValue valueWithUIOffset:UIOffsetMake(0, 0)],
                                     UITextAttributeTextShadowOffset,
-                                    [UIFont fontWithName:@"HelveticaNeue LT 55 Roman" size:9.0],
+                                    [UIFont fontWithName:@"System Bold" size:12.0],
                                     UITextAttributeFont,
                                     nil] forState:UIControlStateNormal];
     
-    //Selected tab bar text
     [tabBarItem setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
                                         [UIColor whiteColor],
                                         UITextAttributeTextColor,
@@ -139,9 +138,12 @@ NSString *const FBSessionStateChangedNotification =
                                         UITextAttributeTextShadowColor,
                                         [NSValue valueWithUIOffset:UIOffsetMake(0, 0)],
                                         UITextAttributeTextShadowOffset,
-                                        [UIFont fontWithName:@"HelveticaNeue LT 55 Roman" size:9.0],
+                                        [UIFont fontWithName:@"System Bold" size:12.0],
                                         UITextAttributeFont,
                                         nil] forState:UIControlStateSelected];
+    
+    //Selected tab bar text
+
     
     
     //Navigation bar
