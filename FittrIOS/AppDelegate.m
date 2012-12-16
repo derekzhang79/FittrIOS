@@ -153,7 +153,7 @@ NSString *const FBSessionStateChangedNotification =
                                                                      UITextAttributeTextColor,
                                                                      [UIColor whiteColor],
                                                                      UITextAttributeTextShadowColor,
-                                                                     [NSValue valueWithUIOffset:UIOffsetMake(0, 0)],
+                                                                     [NSValue valueWithUIOffset:UIOffsetMake(0, 3)],
                                                                      UITextAttributeTextShadowOffset,
                                                                      [UIFont fontWithName:@"Lobster 13" size:26.0],
                                                                      UITextAttributeFont,
