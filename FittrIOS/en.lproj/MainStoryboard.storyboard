@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="JJX-wP-aqr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vOV-SB-VfK">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
     </dependencies>
@@ -94,10 +94,10 @@
             </objects>
             <point key="canvasLocation" x="393" y="169"/>
         </scene>
-        <!--View Controller - Login-->
+        <!--Login View Controller - Login-->
         <scene sceneID="2zc-dv-GwW">
             <objects>
-                <viewController id="KaW-FT-Ti2" sceneMemberID="viewController">
+                <viewController id="KaW-FT-Ti2" customClass="LoginViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0su-dh-KAw">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -118,7 +118,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="JJX-wP-aqr" kind="modal" modalTransitionStyle="flipHorizontal" id="KuB-0k-3Pf"/>
+                                    <action selector="loginWithFacebook:" destination="KaW-FT-Ti2" eventType="touchUpInside" id="f0j-W7-vk8"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -133,10 +133,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Login" id="nhU-pM-Ob5"/>
+                    <connections>
+                        <segue destination="JJX-wP-aqr" kind="modal" identifier="login" id="XWw-7r-hae"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2fp-Li-GpB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="928" y="834"/>
+            <point key="canvasLocation" x="1004" y="827"/>
         </scene>
         <!--View Controller - Feed-->
         <scene sceneID="Jfh-6X-HZ3">
@@ -673,6 +676,12 @@
         <image name="you.png" width="28" height="26"/>
     </resources>
     <classes>
+        <class className="LoginViewController" superclassName="ViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LoginViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="loginWithFacebook:"/>
+            </relationships>
+        </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
         </class>

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2A13C8B1167D29980082C4DF /* Helvetica LT 55 Roman.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A13C8B0167D29980082C4DF /* Helvetica LT 55 Roman.ttf */; };
+		2A13C8C7167D49B10082C4DF /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A13C8C6167D49B10082C4DF /* LoginViewController.m */; };
 		2A24D8CD167CE262002920C0 /* lobster.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A24D8CC167CE262002920C0 /* lobster.ttf */; };
 		2A24D8CF167CE5EF002920C0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A24D8CE167CE5EF002920C0 /* QuartzCore.framework */; };
 		2A4219F5167A4E1800753D8F /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A4219F4167A4E1800753D8F /* Accounts.framework */; };
@@ -63,6 +64,8 @@
 
 /* Begin PBXFileReference section */
 		2A13C8B0167D29980082C4DF /* Helvetica LT 55 Roman.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Helvetica LT 55 Roman.ttf"; sourceTree = "<group>"; };
+		2A13C8C5167D49B10082C4DF /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		2A13C8C6167D49B10082C4DF /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		2A24D8CC167CE262002920C0 /* lobster.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = lobster.ttf; sourceTree = "<group>"; };
 		2A24D8CE167CE5EF002920C0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		2A4219F4167A4E1800753D8F /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
@@ -209,6 +212,8 @@
 				2A8DA7CE16701D6200A105F6 /* ViewController.h */,
 				2A8DA7CF16701D6200A105F6 /* ViewController.m */,
 				2A8DA7BA16701D6200A105F6 /* Supporting Files */,
+				2A13C8C5167D49B10082C4DF /* LoginViewController.h */,
+				2A13C8C6167D49B10082C4DF /* LoginViewController.m */,
 			);
 			path = FittrIOS;
 			sourceTree = "<group>";
@@ -364,6 +369,7 @@
 				2A8DA7C016701D6200A105F6 /* main.m in Sources */,
 				2A8DA7C416701D6200A105F6 /* AppDelegate.m in Sources */,
 				2A8DA7D016701D6200A105F6 /* ViewController.m in Sources */,
+				2A13C8C7167D49B10082C4DF /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
