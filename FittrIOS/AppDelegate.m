@@ -147,6 +147,7 @@ NSString *const FBSessionStateChangedNotification =
     //Navigation bar
     UINavigationBar *navBar = [UINavigationBar appearance];
     [navBar setTintColor: lightBlue];
+    [navBar setBackgroundImage:[UIImage imageNamed:@"titlebg.png"] forBarMetrics:UIBarMetricsDefault];
     [navBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
                                                                      [UIColor clearColor],
                                                                      UITextAttributeTextColor,
