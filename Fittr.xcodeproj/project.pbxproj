@@ -170,7 +170,6 @@
 		2A8DA7A416701D6200A105F6 = {
 			isa = PBXGroup;
 			children = (
-				2A24D8CE167CE5EF002920C0 /* QuartzCore.framework */,
 				2A8DA7B916701D6200A105F6 /* FittrIOS */,
 				2A8DA7B216701D6200A105F6 /* Frameworks */,
 				2A8DA7B016701D6200A105F6 /* Products */,
@@ -188,6 +187,7 @@
 		2A8DA7B216701D6200A105F6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2A24D8CE167CE5EF002920C0 /* QuartzCore.framework */,
 				2A4219F7167A4E1F00753D8F /* AdSupport.framework */,
 				2A4219F4167A4E1800753D8F /* Accounts.framework */,
 				2AF13CD41670202500B04ABB /* FacebookSDKResources.bundle */,
