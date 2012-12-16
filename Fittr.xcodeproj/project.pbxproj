@@ -63,6 +63,8 @@
 		919F041D167E3BD800865A09 /* settingstab.png in Resources */ = {isa = PBXBuildFile; fileRef = 919F0418167E3BD700865A09 /* settingstab.png */; };
 		919F041E167E3BD800865A09 /* workouttab.png in Resources */ = {isa = PBXBuildFile; fileRef = 919F0419167E3BD700865A09 /* workouttab.png */; };
 		919F041F167E3BD800865A09 /* youtab.png in Resources */ = {isa = PBXBuildFile; fileRef = 919F041A167E3BD700865A09 /* youtab.png */; };
+		91B15DFB167E596E009807BF /* iristab.png in Resources */ = {isa = PBXBuildFile; fileRef = 91B15DF9167E596E009807BF /* iristab.png */; };
+		91B15DFC167E596E009807BF /* iristab@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 91B15DFA167E596E009807BF /* iristab@2x.png */; };
 		91BD7AF916718B85008423D3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 91BD7AF816718B85008423D3 /* Default.png */; };
 		91E1463516703AE300322939 /* applogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 91E1463416703AE300322939 /* applogo@2x.png */; };
 		91E1463816703B0700322939 /* applogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 91E1463716703B0700322939 /* applogo.png */; };
@@ -132,6 +134,8 @@
 		919F0418167E3BD700865A09 /* settingstab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settingstab.png; sourceTree = "<group>"; };
 		919F0419167E3BD700865A09 /* workouttab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = workouttab.png; sourceTree = "<group>"; };
 		919F041A167E3BD700865A09 /* youtab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = youtab.png; sourceTree = "<group>"; };
+		91B15DF9167E596E009807BF /* iristab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iristab.png; sourceTree = "<group>"; };
+		91B15DFA167E596E009807BF /* iristab@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iristab@2x.png"; sourceTree = "<group>"; };
 		91BD7AF816718B85008423D3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
 		91E1463416703AE300322939 /* applogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "applogo@2x.png"; path = "../applogo@2x.png"; sourceTree = "<group>"; };
 		91E1463716703B0700322939 /* applogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = applogo.png; path = ../applogo.png; sourceTree = "<group>"; };
@@ -159,6 +163,8 @@
 		2A13C8A8167D27B30082C4DF /* Tab Bar */ = {
 			isa = PBXGroup;
 			children = (
+				91B15DF9167E596E009807BF /* iristab.png */,
+				91B15DFA167E596E009807BF /* iristab@2x.png */,
 				9199E7AC167E449C00AF6F94 /* alexistab@2x.png */,
 				9199E7AD167E449C00AF6F94 /* feedtab@2x.png */,
 				9199E7AE167E449C00AF6F94 /* settingstab@2x.png */,
@@ -389,6 +395,8 @@
 				9199E7B3167E449C00AF6F94 /* settingstab@2x.png in Resources */,
 				9199E7B4167E449C00AF6F94 /* workouttab@2x.png in Resources */,
 				9199E7B5167E449C00AF6F94 /* youtab@2x.png in Resources */,
+				91B15DFB167E596E009807BF /* iristab.png in Resources */,
+				91B15DFC167E596E009807BF /* iristab@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
