@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vOV-SB-VfK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="JJX-wP-aqr">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
     </dependencies>
@@ -278,7 +278,7 @@
                             <constraint firstItem="ste-ma-UZU" firstAttribute="trailing" secondItem="frb-Ew-X2Y" secondAttribute="trailing" type="default" id="nmJ-Yg-aqn"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Feed" image="feed.png" id="AJx-KP-Lmb"/>
+                    <tabBarItem key="tabBarItem" title="Feed" image="feedtab.png" id="AJx-KP-Lmb"/>
                     <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xEa-73-6Gs" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -358,7 +358,7 @@
                             <constraint firstItem="sHL-D4-uUD" firstAttribute="trailing" secondItem="9p3-Ro-aav" secondAttribute="trailing" type="default" id="uhF-0J-zKr"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="You" image="you.png" id="tyQ-7y-Zry"/>
+                    <tabBarItem key="tabBarItem" title="You" image="youtab.png" id="tyQ-7y-Zry"/>
                     <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kiR-fG-u44" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -559,7 +559,7 @@
                             <outlet property="delegate" destination="RaY-cS-CcR" id="Gvh-WI-dq6"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Settings" image="settings.png" id="Wen-WT-GBf"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="settingstab.png" id="Wen-WT-GBf"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
                     <nil key="simulatedTopBarMetrics"/>
                 </tableViewController>
@@ -588,7 +588,7 @@
                             <constraint firstItem="leh-CP-T3d" firstAttribute="leading" secondItem="0Pl-ru-sb9" secondAttribute="leading" type="default" id="wSL-cD-tls"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Alexis" image="alexis.png" id="HdV-Uh-8i4"/>
+                    <tabBarItem key="tabBarItem" title="Alexis" image="alexistab.png" id="HdV-Uh-8i4"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
                     <nil key="simulatedTopBarMetrics"/>
                 </viewController>
@@ -673,7 +673,7 @@
                             <constraint firstItem="3ch-lL-k2h" firstAttribute="top" secondItem="3gu-sS-Uh9" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="uum-4b-HqR"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Workouts" image="workouts.png" id="kG8-KW-Gbg"/>
+                    <tabBarItem key="tabBarItem" title="Workouts" image="workouttab.png" id="kG8-KW-Gbg"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
                     <nil key="simulatedTopBarMetrics"/>
                 </viewController>
@@ -683,19 +683,19 @@
         </scene>
     </scenes>
     <resources>
-        <image name="alexis.png" width="25" height="29"/>
+        <image name="alexistab.png" width="25" height="29"/>
         <image name="connectwfb@2x.png" width="492" height="90"/>
         <image name="connectwfbclick@2x.png" width="492" height="90"/>
-        <image name="feed.png" width="33" height="24"/>
+        <image name="feedtab.png" width="33" height="24"/>
         <image name="loginbg.png" width="640" height="1013"/>
         <image name="logo@2x.png" width="534" height="347"/>
         <image name="roundrectbg@2x.png" width="556" height="91"/>
         <image name="roundrectbgclick@2x.png" width="556" height="91"/>
-        <image name="settings.png" width="29" height="29"/>
+        <image name="settingstab.png" width="29" height="29"/>
         <image name="startworkout@2x.png" width="600" height="125"/>
         <image name="startworkoutclick@2x.png" width="600" height="125"/>
-        <image name="workouts.png" width="16" height="16"/>
-        <image name="you.png" width="28" height="26"/>
+        <image name="workouttab.png" width="28" height="18"/>
+        <image name="youtab.png" width="28" height="26"/>
     </resources>
     <classes>
         <class className="DrawingView" superclassName="UIView">
