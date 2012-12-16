@@ -9,8 +9,11 @@
 #import "ViewController.h"
 #import "AppDelegate.h"
 
-@interface LoginViewController : ViewController
+@interface LoginViewController : ViewController <NSURLConnectionDelegate>
 
 - (IBAction)loginWithFacebook:(id)sender;
+- (IBAction)getTweets:(id)sender;
+
+@property (nonatomic, readwrite) NSMutableData *data;
 
 @end

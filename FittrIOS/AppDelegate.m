@@ -104,6 +104,7 @@ NSString *const FBSessionStateChangedNotification =
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    /* ###################### UI Related ###################### */
     //Colors
     UIColor *lightBlue = [UIColor colorWithRed:0.062745 green:0.447059 blue:0.549020 alpha:1];
     UIColor *lighterBlue = [UIColor colorWithRed:0.576471 green:0.749020 blue:0.796079 alpha:1];
@@ -160,6 +161,12 @@ NSString *const FBSessionStateChangedNotification =
     //Navigation bar buttons like 'back'
     UIBarButtonItem *navBarItem = [UIBarButtonItem appearance];
     [navBarItem setTintColor: lightBlue];
+    
+    /* ###################### End UI Related ###################### */
+    
+    //Setup restkit singleton (automatically used globally
+    //RKClient* client = [RKClient clientWithBaseURL:@"http://www.fittr.com"];
+    
     return YES;
 }
 							

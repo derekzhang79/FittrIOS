@@ -10,6 +10,7 @@
 		2A13C8B1167D29980082C4DF /* Helvetica LT 55 Roman.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A13C8B0167D29980082C4DF /* Helvetica LT 55 Roman.ttf */; };
 		2A13C8C7167D49B10082C4DF /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A13C8C6167D49B10082C4DF /* LoginViewController.m */; };
 		2A13C8CA167D52380082C4DF /* DrawingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A13C8C9167D52380082C4DF /* DrawingView.m */; };
+		2A13C8F1167D75C60082C4DF /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A13C8F0167D75C60082C4DF /* CFNetwork.framework */; };
 		2A24D8CD167CE262002920C0 /* lobster.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A24D8CC167CE262002920C0 /* lobster.ttf */; };
 		2A24D8CF167CE5EF002920C0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A24D8CE167CE5EF002920C0 /* QuartzCore.framework */; };
 		2A4219F5167A4E1800753D8F /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A4219F4167A4E1800753D8F /* Accounts.framework */; };
@@ -69,7 +70,8 @@
 		2A13C8C6167D49B10082C4DF /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		2A13C8C8167D52380082C4DF /* DrawingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawingView.h; sourceTree = "<group>"; };
 		2A13C8C9167D52380082C4DF /* DrawingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawingView.m; sourceTree = "<group>"; };
-		2A13C8CE167D65070082C4DF /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RestKit.xcodeproj; path = "RestKit-0.20.0-pre4/RestKit.xcodeproj"; sourceTree = "<group>"; };
+		2A13C8EC167D75A60082C4DF /* libRestKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libRestKit.a; path = "DerivedData/Fittr/Build/Products/Debug-iphoneos/libRestKit.a"; sourceTree = "<group>"; };
+		2A13C8F0167D75C60082C4DF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		2A24D8CC167CE262002920C0 /* lobster.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = lobster.ttf; sourceTree = "<group>"; };
 		2A24D8CE167CE5EF002920C0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		2A4219F4167A4E1800753D8F /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
@@ -140,6 +142,7 @@
 				2A8DA7B616701D6200A105F6 /* Foundation.framework in Frameworks */,
 				2A8DA7B816701D6200A105F6 /* CoreGraphics.framework in Frameworks */,
 				2AF13CD21670201F00B04ABB /* FacebookSDK.framework in Frameworks */,
+				2A13C8F1167D75C60082C4DF /* CFNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +197,8 @@
 		2A8DA7B216701D6200A105F6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2A13C8F0167D75C60082C4DF /* CFNetwork.framework */,
+				2A13C8EC167D75A60082C4DF /* libRestKit.a */,
 				2A24D8CE167CE5EF002920C0 /* QuartzCore.framework */,
 				2A4219F7167A4E1F00753D8F /* AdSupport.framework */,
 				2A4219F4167A4E1800753D8F /* Accounts.framework */,
@@ -210,7 +215,6 @@
 		2A8DA7B916701D6200A105F6 /* FittrIOS */ = {
 			isa = PBXGroup;
 			children = (
-				2A13C8CE167D65070082C4DF /* RestKit.xcodeproj */,
 				2A8DA7C216701D6200A105F6 /* AppDelegate.h */,
 				2A8DA7C316701D6200A105F6 /* AppDelegate.m */,
 				2A8DA7CB16701D6200A105F6 /* MainStoryboard.storyboard */,
@@ -465,6 +469,10 @@
 				GCC_PREFIX_HEADER = "FittrIOS/Fittr-Prefix.pch";
 				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"";
 				INFOPLIST_FILE = "FittrIOS/Fittr-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/DerivedData/Fittr/Build/Products/Debug-iphoneos\"",
+				);
 				OTHER_LDFLAGS = "-lsqlite3.0";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				WRAPPER_EXTENSION = app;
@@ -483,6 +491,10 @@
 				GCC_PREFIX_HEADER = "FittrIOS/Fittr-Prefix.pch";
 				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"";
 				INFOPLIST_FILE = "FittrIOS/Fittr-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/DerivedData/Fittr/Build/Products/Debug-iphoneos\"",
+				);
 				OTHER_LDFLAGS = "-lsqlite3.0";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				WRAPPER_EXTENSION = app;

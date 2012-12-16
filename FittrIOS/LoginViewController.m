@@ -10,11 +10,15 @@
 
 @implementation LoginViewController
 
+@synthesize data;
+
 - (void) viewDidLoad
 {
     [super viewDidLoad];
     
     NSLog(@"Hello!");
+    
+    data = [[NSMutableData alloc] init];
 }
 
 - (IBAction)loginWithFacebook:(id)sender
@@ -31,5 +35,18 @@
         
     }
 }
+
+- (IBAction)getTweets:(id)sender
+{
+    NSURL *url = [NSURL URLWithString:@"http://search.twitter.com/search.json?q=@scottgu"];
+    
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    
+    NSURLConnection *connection = [NSURLConnection connectionWithRequest:request delegate:self];
+    
+    
+}
+
+
 
 @end
