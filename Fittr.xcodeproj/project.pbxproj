@@ -70,7 +70,6 @@
 		2A13C8C6167D49B10082C4DF /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		2A13C8C8167D52380082C4DF /* DrawingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawingView.h; sourceTree = "<group>"; };
 		2A13C8C9167D52380082C4DF /* DrawingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawingView.m; sourceTree = "<group>"; };
-		2A13C8EC167D75A60082C4DF /* libRestKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libRestKit.a; path = "DerivedData/Fittr/Build/Products/Debug-iphoneos/libRestKit.a"; sourceTree = "<group>"; };
 		2A13C8F0167D75C60082C4DF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		2A24D8CC167CE262002920C0 /* lobster.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = lobster.ttf; sourceTree = "<group>"; };
 		2A24D8CE167CE5EF002920C0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -168,6 +167,15 @@
 			name = "Tab Bar";
 			sourceTree = "<group>";
 		};
+		2A2342DF167E3734004769FF /* Nav Bar */ = {
+			isa = PBXGroup;
+			children = (
+				9153588816792E6B00BE9863 /* titlebg.png */,
+				9153588916792E6B00BE9863 /* titlebg@2x.png */,
+			);
+			name = "Nav Bar";
+			sourceTree = "<group>";
+		};
 		2A24D8CB167CE255002920C0 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,7 +206,6 @@
 			isa = PBXGroup;
 			children = (
 				2A13C8F0167D75C60082C4DF /* CFNetwork.framework */,
-				2A13C8EC167D75A60082C4DF /* libRestKit.a */,
 				2A24D8CE167CE5EF002920C0 /* QuartzCore.framework */,
 				2A4219F7167A4E1F00753D8F /* AdSupport.framework */,
 				2A4219F4167A4E1800753D8F /* Accounts.framework */,
@@ -248,12 +255,11 @@
 		2AF13CD91670203B00B04ABB /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				2A2342DF167E3734004769FF /* Nav Bar */,
 				2A13C8A8167D27B30082C4DF /* Tab Bar */,
 				91BD7AF816718B85008423D3 /* Default.png */,
 				91E1463716703B0700322939 /* applogo.png */,
 				91E1463416703AE300322939 /* applogo@2x.png */,
-				9153588816792E6B00BE9863 /* titlebg.png */,
-				9153588916792E6B00BE9863 /* titlebg@2x.png */,
 				915B07361679176000A8BBA0 /* segments.png */,
 				915B07371679176000A8BBA0 /* segments@2x.png */,
 				915B072E1679127500A8BBA0 /* startworkout.png */,
