@@ -106,7 +106,7 @@ NSString *const FBSessionStateChangedNotification =
 {
     /* ###################### UI Related ###################### */
     //Colors
-    UIColor *lightBlue = [UIColor colorWithRed:0.050980 green:0.305882 blue:0.352941 alpha:1];
+    UIColor *lightBlue = [UIColor colorWithRed:0.062745 green:0.447059 blue:0.549020 alpha:1];
     UIColor *lighterBlue = [UIColor colorWithRed:0.576471 green:0.749020 blue:0.796079 alpha:1];
     
     //Tab bar
