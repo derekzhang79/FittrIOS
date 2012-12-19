@@ -106,24 +106,26 @@ NSString *const FBSessionStateChangedNotification =
 {
     /* ###################### UI Related ###################### */
     //Colors
-    UIColor *lightBlue = [UIColor colorWithRed:0.062745 green:0.447059 blue:0.549020 alpha:1];
-    UIColor *lighterBlue = [UIColor colorWithRed:0.576471 green:0.749020 blue:0.796079 alpha:1];
+    UIColor *fittrBlue = [UIColor colorWithRed:0.152941 green:0.650980 blue:0.678431 alpha:1];
+    UIColor *fittrLightBlue = [UIColor colorWithRed:0.623529 green:0.843137 blue:0.933333 alpha:1];
+    UIColor *fittrWhite = [UIColor colorWithRed:0.972549 green:0.972549 blue:0.972549 alpha:1];
+    UIColor *fittrBlack = [UIColor colorWithRed:0.196078 green:0.196078 blue:0.196078 alpha:1];
     
     //Tab bar
     UITabBar *tabBar = [UITabBar appearance];
     [tabBar setSelectedImageTintColor: [UIColor whiteColor]];
 	[tabBar setBackgroundImage:[UIImage imageNamed:@"tabbg.png"]];
 	[tabBar setSelectionIndicatorImage:[UIImage imageNamed:@"tabselected.png"]];
-    [tabBar setTintColor:lightBlue];
+    [tabBar setTintColor:fittrBlue];
     
     //Tab bar item
     UITabBarItem *tabBarItem = [UITabBarItem appearance];
     
     //Non selected tab bar text
     [tabBarItem setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
-                                    lighterBlue,
+                                    fittrLightBlue,
                                     UITextAttributeTextColor,
-                                    lighterBlue,
+                                    fittrLightBlue,
                                     UITextAttributeTextShadowColor,
                                     [NSValue valueWithUIOffset:UIOffsetMake(0, 0)],
                                     UITextAttributeTextShadowOffset,
@@ -142,13 +144,9 @@ NSString *const FBSessionStateChangedNotification =
                                         UITextAttributeFont,
                                         nil] forState:UIControlStateSelected];
     
-    //Selected tab bar text
-
-    
-    
     //Navigation bar
     UINavigationBar *navBar = [UINavigationBar appearance];
-    [navBar setTintColor: lightBlue];
+    [navBar setTintColor: fittrBlue];
     [navBar setBackgroundImage:[UIImage imageNamed:@"titlebg.png"] forBarMetrics:UIBarMetricsDefault];
     [navBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
                                                                      [UIColor clearColor],
@@ -157,13 +155,13 @@ NSString *const FBSessionStateChangedNotification =
                                                                      UITextAttributeTextShadowColor,
                                                                      [NSValue valueWithUIOffset:UIOffsetMake(0, 3)],
                                                                      UITextAttributeTextShadowOffset,
-                                                                     [UIFont fontWithName:@"Lobster 13" size:26.0],
+                                                                     [UIFont fontWithName:@"Lobster 13" size:23.0],
                                                                      UITextAttributeFont,
                                                                      nil]];
     
     //Navigation bar buttons like 'back'
     UIBarButtonItem *navBarItem = [UIBarButtonItem appearance];
-    [navBarItem setTintColor: lightBlue];
+    [navBarItem setTintColor: fittrBlue];
     
     /* ###################### End UI Related ###################### */
     

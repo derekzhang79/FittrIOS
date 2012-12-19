@@ -19,6 +19,15 @@
     NSLog(@"Hello!");
     
     data = [[NSMutableData alloc] init];
+    
+    self.logo.alpha = 0.0f;
+    [UIView animateWithDuration:1.0f
+        delay:1.0f
+        options:UIViewAnimationOptionCurveEaseIn
+        animations:^(void) {
+            self.logo.alpha = 1.0f;
+        }
+        completion:NULL];
 }
 
 - (IBAction)loginWithFacebook:(id)sender
@@ -45,6 +54,10 @@
     NSURLConnection *connection = [NSURLConnection connectionWithRequest:request delegate:self];
     
     
+}
+
+- (IBAction)loginNormally:(id)sender {
+    [self performSegueWithIdentifier:@"login" sender:0];
 }
 
 
