@@ -244,7 +244,8 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="sHL-D4-uUD">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="306" type="user" id="rNL-Po-WAH"/>
+                                    <constraint firstAttribute="height" priority="750" constant="301" type="user" id="rNL-Po-WAH"/>
+                                    <constraint firstAttribute="height" constant="218" id="wYA-u4-hgd"/>
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="H4X-Sy-bzS">
