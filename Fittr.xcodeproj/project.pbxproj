@@ -321,6 +321,8 @@
 		2A8D6D681682A08C0067EFD1 /* Text Fields */ = {
 			isa = PBXGroup;
 			children = (
+				916A8E781682A2A500434C0B /* fulltext.png */,
+				916A8E791682A2A500434C0B /* fulltext@2x.png */,
 				916A8E6D16829FFB00434C0B /* toptext.png */,
 				916A8E6E16829FFB00434C0B /* toptext@2x.png */,
 				916A8E6C16829FFB00434C0B /* bottomtext@2x.png */,
