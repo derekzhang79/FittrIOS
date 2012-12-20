@@ -9,11 +9,10 @@
 #import "ViewController.h"
 #import "AppDelegate.h"
 
-@interface LoginViewController : ViewController <NSURLConnectionDelegate>
+@interface LoginSelectionController : ViewController <NSURLConnectionDelegate>
 
 - (IBAction)loginWithFacebook:(id)sender;
 - (IBAction)getTweets:(id)sender;
-- (IBAction)loginNormally:(id)sender;
 
 @property (weak, nonatomic) IBOutlet UIImageView *logo;
 @property (nonatomic, readwrite) NSMutableData *data;

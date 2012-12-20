@@ -6,9 +6,9 @@
 //  Copyright (c) 2012 GndFloor. All rights reserved.
 //
 
-#import "LoginViewController.h"
+#import "LoginSelectionController.h"
 
-@implementation LoginViewController
+@implementation LoginSelectionController
 
 @synthesize data;
 
