@@ -22,13 +22,15 @@
     
     self.logo.alpha = 0.0f;
     [UIView animateWithDuration:1.0f
-        delay:1.0f
-        options:UIViewAnimationOptionCurveEaseIn
+        delay:0.5f
+        options:UIViewAnimationOptionCurveLinear
         animations:^(void) {
             self.logo.alpha = 1.0f;
         }
         completion:NULL];
 }
+
+
 
 - (IBAction)loginWithFacebook:(id)sender
 {
