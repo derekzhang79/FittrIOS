@@ -282,16 +282,16 @@
                                     <navigationItem title="You" id="iRP-a4-1Nn"/>
                                 </items>
                             </navigationBar>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ljh-In-Gj9">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ljh-In-Gj9">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="285" id="voJ-bs-J57"/>
                                 </constraints>
                                 <segments>
-                                    <segment title="Trophies"/>
-                                    <segment title="Groups"/>
-                                    <segment title="Graphs"/>
+                                    <segment title="" image="trophies.png"/>
+                                    <segment title="" image="groups.png"/>
+                                    <segment title="" image="level.png"/>
                                 </segments>
-                                <color key="tintColor" red="1" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.15294117647058825" green="0.65098039215686276" blue="0.67843137254901964" alpha="1" colorSpace="calibratedRGB"/>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="sHL-D4-uUD">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -338,8 +338,8 @@
                             <constraint firstItem="sHL-D4-uUD" firstAttribute="leading" secondItem="9p3-Ro-aav" secondAttribute="leading" type="default" id="WxU-EI-Uqm"/>
                             <constraint firstItem="UtR-b2-bK0" firstAttribute="trailing" secondItem="9p3-Ro-aav" secondAttribute="trailing" type="default" id="X5K-Ey-LMh"/>
                             <constraint firstItem="sHL-D4-uUD" firstAttribute="trailing" secondItem="9p3-Ro-aav" secondAttribute="trailing" type="default" id="cFb-Gj-9rR"/>
-                            <constraint firstItem="ljh-In-Gj9" firstAttribute="top" secondItem="9p3-Ro-aav" secondAttribute="top" constant="150" id="dYh-sV-bv7"/>
-                            <constraint firstItem="sHL-D4-uUD" firstAttribute="top" secondItem="9p3-Ro-aav" secondAttribute="top" constant="193" id="mv5-Iv-Ffh"/>
+                            <constraint firstItem="ljh-In-Gj9" firstAttribute="top" secondItem="9p3-Ro-aav" secondAttribute="top" constant="142" id="ihc-Qs-Ot7"/>
+                            <constraint firstItem="sHL-D4-uUD" firstAttribute="top" secondItem="ljh-In-Gj9" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="nxy-gk-ZIm"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="You" image="youtab.png" id="tyQ-7y-Zry"/>
@@ -816,7 +816,9 @@
         <image name="connectwfb@2x.png" width="492" height="90"/>
         <image name="feedtab.png" width="33" height="24"/>
         <image name="fulltext.png" width="286" height="88"/>
+        <image name="groups.png" width="53" height="37"/>
         <image name="iristab.png" width="25" height="14"/>
+        <image name="level.png" width="53" height="37"/>
         <image name="loginbg.png" width="640" height="1013"/>
         <image name="logo@2x.png" width="534" height="347"/>
         <image name="orgraphic@2x.png" width="237" height="32"/>
@@ -825,6 +827,7 @@
         <image name="silver-button-pressed@2x.png" width="612" height="93"/>
         <image name="startworkout@2x.png" width="600" height="125"/>
         <image name="startworkoutclick@2x.png" width="600" height="125"/>
+        <image name="trophies.png" width="53" height="37"/>
         <image name="workouttab.png" width="28" height="18"/>
         <image name="youtab.png" width="28" height="26"/>
     </resources>
