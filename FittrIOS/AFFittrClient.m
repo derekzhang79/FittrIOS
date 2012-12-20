@@ -50,8 +50,8 @@ static NSString *const kAFFittrAPICheckUserPath = @"User/checkUser";
     [operation start];
 }
 
--(void)checkUserWithUsername: (NSString *)username andPassword: (NSString *)password {
-    NSMutableDictionary* params =[NSMutableDictionary dictionaryWithObjectsAndKeys:
+-(void)checkUserWithUsername: (NSString *)username andPassword: (NSString *)password delegate: (id<AFFittrClientDelegate>)delegate {
+    NSMutableDictionary* params = [NSMutableDictionary dictionaryWithObjectsAndKeys:
                                   username, @"username",
                                   password, @"password",
                                   nil];
@@ -59,6 +59,10 @@ static NSString *const kAFFittrAPICheckUserPath = @"User/checkUser";
     //make the call to the web API
     [[AFFittrClient sharedClient] commandWithParams:params forPath:kAFFittrAPICheckUserPath
         onCompletion:^(NSDictionary*json){
+            if ([[json valueForKey:@"user_exists"] isEqualToString:@"true"])
+                [delegate onCheckUser: true];
+            else
+                [delegate onCheckUser: false];
     }];
 }
 

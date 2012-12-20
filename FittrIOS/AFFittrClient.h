@@ -5,6 +5,15 @@
 //API call completion block with result as json
 typedef void(^JSONResponseBlock)(NSDictionary* json);
 
+@protocol AFFittrClientDelegate <NSObject>
+
+@optional
+
+//Called when a checkUserWithUsername:andPassword is sent through
+-(void)onCheckUser:(BOOL)res;
+
+@end
+
 @interface AFFittrClient : AFHTTPClient
 
 //the authorized user
@@ -14,7 +23,7 @@ typedef void(^JSONResponseBlock)(NSDictionary* json);
 -(void)commandWithParams:(NSMutableDictionary*)params onCompletion:(JSONResponseBlock)completionBlock;
 
 //Check if user exists
--(void)checkUserWithUsername: (NSString *)username andPassword: (NSString *)password;
+-(void)checkUserWithUsername: (NSString *)username andPassword: (NSString *)password delegate: (id<AFFittrClientDelegate>)delegate;
 
 + (AFFittrClient *)sharedClient;
 

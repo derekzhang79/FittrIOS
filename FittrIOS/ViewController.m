@@ -30,9 +30,6 @@
     
     [operation start];
     
-    AFFittrClient *client = [AFFittrClient sharedClient];
-    [client checkUserWithUsername:@"jlesko" andPassword:@"test"];
-    
 }
 
 - (void)didReceiveMemoryWarning

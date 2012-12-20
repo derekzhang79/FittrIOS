@@ -12,8 +12,12 @@
 
 @synthesize username;
 @synthesize password;
+@synthesize errorMessage;
 
 - (void)viewDidLoad {
+    //Setup error handling
+    errorMessage = [[NSString alloc] init];
+    
     //Setup keyboard nexting
     username.tag = 0;
     password.tag = 1;
@@ -46,6 +50,7 @@
     if ([[segue identifier] isEqualToString:@"attemptLogin"]) {
         [[segue destinationViewController] setUsername: username.text];
         [[segue destinationViewController] setPassword: password.text];
+        [[segue destinationViewController] setNormalLoginView: self];
     }
 }
 

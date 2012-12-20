@@ -250,19 +250,6 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="loginbg.png" translatesAutoresizingMaskIntoConstraints="NO" id="PvA-OE-jZ0"/>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="pPL-X9-6Ka"/>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jog-bb-reo">
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="back:" destination="7qc-hS-fop" eventType="touchUpInside" id="HkG-ch-X7z"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -271,9 +258,7 @@
                             <constraint firstItem="PvA-OE-jZ0" firstAttribute="top" secondItem="Scy-zA-JLr" secondAttribute="top" type="default" id="bKX-32-gRb"/>
                             <constraint firstAttribute="centerX" secondItem="pPL-X9-6Ka" secondAttribute="centerX" type="user" id="mof-SD-pVR"/>
                             <constraint firstAttribute="centerY" secondItem="pPL-X9-6Ka" secondAttribute="centerY" type="user" id="sH3-EJ-Kl6"/>
-                            <constraint firstItem="Jog-bb-reo" firstAttribute="centerX" secondItem="pPL-X9-6Ka" secondAttribute="centerX" type="default" id="sSc-OQ-GNo"/>
                             <constraint firstItem="PvA-OE-jZ0" firstAttribute="leading" secondItem="Scy-zA-JLr" secondAttribute="leading" type="default" id="xKo-kg-zKY"/>
-                            <constraint firstAttribute="bottom" secondItem="Jog-bb-reo" secondAttribute="bottom" constant="95" id="xaF-DA-Jd1"/>
                         </constraints>
                     </view>
                     <connections>
@@ -364,7 +349,7 @@
             </objects>
             <point key="canvasLocation" x="1566" y="-19"/>
         </scene>
-        <!--Normal Login View Controller - Fittr Login-->
+        <!--Normal Login View Controller - Login-->
         <scene sceneID="hUS-2X-RWm">
             <objects>
                 <viewController id="4q5-VC-9Gf" customClass="NormalLoginViewController" sceneMemberID="viewController">
@@ -435,7 +420,7 @@
                             <constraint firstItem="laq-bR-rfd" firstAttribute="top" secondItem="Jkq-EZ-PhC" secondAttribute="top" type="default" id="vpg-WI-glH"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Fittr Login" id="blg-IC-YdS"/>
+                    <navigationItem key="navigationItem" title="Login" id="blg-IC-YdS"/>
                     <connections>
                         <outlet property="password" destination="dQ3-TL-QJV" id="2eS-4y-dpO"/>
                         <outlet property="username" destination="5cJ-Pr-JDX" id="DAz-yW-ZZb"/>
@@ -848,6 +833,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LoginSelectionController.h"/>
             <relationships>
                 <relationship kind="action" name="getTweets:"/>
+                <relationship kind="action" name="loginNormally:"/>
                 <relationship kind="action" name="loginWithFacebook:"/>
                 <relationship kind="outlet" name="logo" candidateClass="UIImageView"/>
             </relationships>
@@ -857,9 +843,6 @@
         </class>
         <class className="NormalLoginProgressViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NormalLoginProgressViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="back:"/>
-            </relationships>
         </class>
         <class className="NormalLoginViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NormalLoginViewController.h"/>

@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NormalLoginProgressViewController.h"
 
 @interface NormalLoginViewController : UIViewController <UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *username;
 @property (weak, nonatomic) IBOutlet UITextField *password;
+@property (strong, nonatomic) NSString *errorMessage;
 
 - (IBAction)login:(id)sender;
 

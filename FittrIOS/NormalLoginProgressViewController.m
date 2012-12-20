@@ -12,16 +12,24 @@
 
 @synthesize username;
 @synthesize password;
+@synthesize normalLoginView;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    AFFittrClient *client = [AFFittrClient sharedClient];
-    [client checkUserWithUsername:username andPassword:password];
 }
 
-- (IBAction)back:(id)sender {
-    [self performSegueWithIdentifier:@"login" sender:Nil];
-    
+- (void)viewDidAppear:(BOOL)animated {
+    AFFittrClient *client = [AFFittrClient sharedClient];
+    [client checkUserWithUsername:username andPassword:password delegate:self];
 }
+
+-(void)onCheckUser:(BOOL)userExists {
+    if (userExists) {
+        [self performSegueWithIdentifier:@"login" sender:Nil];
+    } else {
+        
+        [self dismissViewControllerAnimated:TRUE completion:Nil];
+    }
+}
+
 @end

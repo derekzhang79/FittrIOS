@@ -9,10 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "AFFittrClient.h"
 
-@interface NormalLoginProgressViewController : UIViewController
-- (IBAction)back:(id)sender;
+@interface NormalLoginProgressViewController : UIViewController <AFFittrClientDelegate>
+
+-(void)onCheckUser;
 
 @property (nonatomic, strong) NSString *username;
 @property (nonatomic, strong) NSString *password;
+@property (nonatomic, weak) NormalLoginProgressViewController *normalLoginView;
 
 @end
