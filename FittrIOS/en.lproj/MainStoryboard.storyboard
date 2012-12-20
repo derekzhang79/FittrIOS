@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vOV-SB-VfK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vOV-SB-VfK">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
     </dependencies>
@@ -246,14 +246,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="pPL-X9-6Ka" firstAttribute="top" secondItem="Scy-zA-JLr" secondAttribute="top" constant="255" id="4cf-K6-O2C"/>
-                            <constraint firstAttribute="trailing" secondItem="Jog-bb-reo" secondAttribute="trailing" constant="81" id="IXD-mm-4NO"/>
-                            <constraint firstItem="PvA-OE-jZ0" firstAttribute="bottom" secondItem="Scy-zA-JLr" secondAttribute="bottom" type="default" id="TyG-7g-JPu"/>
+                            <constraint firstItem="pPL-X9-6Ka" firstAttribute="centerY" secondItem="PvA-OE-jZ0" secondAttribute="centerY" type="default" id="1u1-hq-i4R"/>
                             <constraint firstItem="PvA-OE-jZ0" firstAttribute="trailing" secondItem="Scy-zA-JLr" secondAttribute="trailing" type="default" id="VFp-nC-3kj"/>
                             <constraint firstItem="PvA-OE-jZ0" firstAttribute="top" secondItem="Scy-zA-JLr" secondAttribute="top" type="default" id="bKX-32-gRb"/>
-                            <constraint firstItem="pPL-X9-6Ka" firstAttribute="centerX" secondItem="PvA-OE-jZ0" secondAttribute="centerX" type="default" id="e5I-CJ-7e2"/>
-                            <constraint firstAttribute="bottom" secondItem="Jog-bb-reo" secondAttribute="bottom" constant="58" id="pxW-1j-cfJ"/>
+                            <constraint firstAttribute="centerX" secondItem="pPL-X9-6Ka" secondAttribute="centerX" type="user" id="mof-SD-pVR"/>
+                            <constraint firstAttribute="centerY" secondItem="pPL-X9-6Ka" secondAttribute="centerY" type="user" id="sH3-EJ-Kl6"/>
+                            <constraint firstItem="Jog-bb-reo" firstAttribute="centerX" secondItem="pPL-X9-6Ka" secondAttribute="centerX" type="default" id="sSc-OQ-GNo"/>
                             <constraint firstItem="PvA-OE-jZ0" firstAttribute="leading" secondItem="Scy-zA-JLr" secondAttribute="leading" type="default" id="xKo-kg-zKY"/>
+                            <constraint firstAttribute="bottom" secondItem="Jog-bb-reo" secondAttribute="bottom" constant="95" id="xaF-DA-Jd1"/>
                         </constraints>
                     </view>
                     <connections>
@@ -328,13 +328,13 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="UtR-b2-bK0" firstAttribute="top" secondItem="9p3-Ro-aav" secondAttribute="top" type="default" id="4S8-YC-LZn"/>
-                            <constraint firstItem="sHL-D4-uUD" firstAttribute="top" secondItem="9p3-Ro-aav" secondAttribute="top" constant="193" id="JiK-9f-gsk"/>
                             <constraint firstItem="UtR-b2-bK0" firstAttribute="centerX" secondItem="ljh-In-Gj9" secondAttribute="centerX" type="default" id="PYa-8b-cBm"/>
                             <constraint firstItem="UtR-b2-bK0" firstAttribute="leading" secondItem="9p3-Ro-aav" secondAttribute="leading" type="default" id="UV7-Kn-dzn"/>
                             <constraint firstItem="sHL-D4-uUD" firstAttribute="leading" secondItem="9p3-Ro-aav" secondAttribute="leading" type="default" id="WxU-EI-Uqm"/>
                             <constraint firstItem="UtR-b2-bK0" firstAttribute="trailing" secondItem="9p3-Ro-aav" secondAttribute="trailing" type="default" id="X5K-Ey-LMh"/>
                             <constraint firstItem="sHL-D4-uUD" firstAttribute="trailing" secondItem="9p3-Ro-aav" secondAttribute="trailing" type="default" id="cFb-Gj-9rR"/>
                             <constraint firstItem="ljh-In-Gj9" firstAttribute="top" secondItem="9p3-Ro-aav" secondAttribute="top" constant="150" id="dYh-sV-bv7"/>
+                            <constraint firstItem="sHL-D4-uUD" firstAttribute="top" secondItem="9p3-Ro-aav" secondAttribute="top" constant="193" id="mv5-Iv-Ffh"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="You" image="youtab.png" id="tyQ-7y-Zry"/>
@@ -807,42 +807,6 @@
         <image name="workouttab.png" width="28" height="18"/>
         <image name="youtab.png" width="28" height="26"/>
     </resources>
-    <classes>
-        <class className="LoginSelectionController" superclassName="ViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/LoginSelectionController.h"/>
-            <relationships>
-                <relationship kind="action" name="getTweets:"/>
-                <relationship kind="action" name="loginWithFacebook:"/>
-                <relationship kind="outlet" name="logo" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="NormalLoginProgressViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NormalLoginProgressViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="back:"/>
-            </relationships>
-        </class>
-        <class className="NormalLoginViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NormalLoginViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="login:"/>
-                <relationship kind="outlet" name="password" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="username" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="SettingsViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SettingsViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="signOut:"/>
-            </relationships>
-        </class>
-        <class className="ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
