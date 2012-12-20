@@ -15,6 +15,7 @@
 }
 
 - (IBAction)back:(id)sender {
-        [self dismissViewControllerAnimated:TRUE completion:Nil];
+    [self performSegueWithIdentifier:@"login" sender:Nil];
+    
 }
 @end

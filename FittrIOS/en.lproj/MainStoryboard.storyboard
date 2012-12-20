@@ -256,10 +256,13 @@
                             <constraint firstItem="PvA-OE-jZ0" firstAttribute="leading" secondItem="Scy-zA-JLr" secondAttribute="leading" type="default" id="xKo-kg-zKY"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="JJX-wP-aqr" kind="modal" identifier="login" modalTransitionStyle="flipHorizontal" id="iZh-fC-kri"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9aX-JM-OL4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1234" y="-66"/>
+            <point key="canvasLocation" x="1077" y="-87"/>
         </scene>
         <!--View Controller - You-->
         <scene sceneID="XLP-Mv-eOZ">
@@ -605,7 +608,7 @@
                     <navigationItem key="navigationItem" title="Settings" id="7FE-me-hXC">
                         <barButtonItem key="rightBarButtonItem" title="Sign Out" id="yme-TG-dh6">
                             <connections>
-                                <action selector="signOut:" destination="RaY-cS-CcR" id="R8G-6A-4Rh"/>
+                                <action selector="signOut:" destination="RaY-cS-CcR" id="ZcJ-Tx-aeV"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -845,4 +848,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="iZh-fC-kri"/>
+    </inferredMetricsTieBreakers>
 </document>
