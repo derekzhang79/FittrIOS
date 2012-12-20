@@ -29,6 +29,10 @@
 		2A8D6D5E16829B7F0067EFD1 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A8D6D5D16829B7F0067EFD1 /* MobileCoreServices.framework */; };
 		2A8D6D6016829B9D0067EFD1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A8D6D5F16829B9D0067EFD1 /* SystemConfiguration.framework */; };
 		2A8D6D6316829D040067EFD1 /* AFFittrClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A8D6D6216829D030067EFD1 /* AFFittrClient.m */; };
+		2A8D6D6A1682A0FC0067EFD1 /* toptext.png in Resources */ = {isa = PBXBuildFile; fileRef = 916A8E6D16829FFB00434C0B /* toptext.png */; };
+		2A8D6D6B1682A0FC0067EFD1 /* toptext@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 916A8E6E16829FFB00434C0B /* toptext@2x.png */; };
+		2A8D6D6C1682A0FC0067EFD1 /* bottomtext@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 916A8E6C16829FFB00434C0B /* bottomtext@2x.png */; };
+		2A8D6D6D1682A0FC0067EFD1 /* bottomtext.png in Resources */ = {isa = PBXBuildFile; fileRef = 916A8E6B16829FFB00434C0B /* bottomtext.png */; };
 		2A8DA7B416701D6200A105F6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A8DA7B316701D6200A105F6 /* UIKit.framework */; };
 		2A8DA7B616701D6200A105F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A8DA7B516701D6200A105F6 /* Foundation.framework */; };
 		2A8DA7B816701D6200A105F6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A8DA7B716701D6200A105F6 /* CoreGraphics.framework */; };
@@ -170,7 +174,7 @@
 		916A8E61168299DD00434C0B /* connectwfbclick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = connectwfbclick.png; sourceTree = "<group>"; };
 		916A8E62168299DE00434C0B /* connectwfbclick@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "connectwfbclick@2x.png"; sourceTree = "<group>"; };
 		916A8E6B16829FFB00434C0B /* bottomtext.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bottomtext.png; sourceTree = "<group>"; };
-		916A8E6C16829FFB00434C0B /* bottomtext@2x */ = {isa = PBXFileReference; lastKnownFileType = file; path = "bottomtext@2x"; sourceTree = "<group>"; };
+		916A8E6C16829FFB00434C0B /* bottomtext@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bottomtext@2x.png"; sourceTree = "<group>"; };
 		916A8E6D16829FFB00434C0B /* toptext.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toptext.png; sourceTree = "<group>"; };
 		916A8E6E16829FFB00434C0B /* toptext@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toptext@2x.png"; sourceTree = "<group>"; };
 		918513D0168292C10078B9EC /* groups.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = groups.png; sourceTree = "<group>"; };
@@ -314,6 +318,17 @@
 			path = AFNetworking;
 			sourceTree = "<group>";
 		};
+		2A8D6D681682A08C0067EFD1 /* Text Fields */ = {
+			isa = PBXGroup;
+			children = (
+				916A8E6D16829FFB00434C0B /* toptext.png */,
+				916A8E6E16829FFB00434C0B /* toptext@2x.png */,
+				916A8E6C16829FFB00434C0B /* bottomtext@2x.png */,
+				916A8E6B16829FFB00434C0B /* bottomtext.png */,
+			);
+			name = "Text Fields";
+			sourceTree = "<group>";
+		};
 		2A8DA7A416701D6200A105F6 = {
 			isa = PBXGroup;
 			children = (
@@ -388,10 +403,7 @@
 		2AF13CD91670203B00B04ABB /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				916A8E6B16829FFB00434C0B /* bottomtext.png */,
-				916A8E6C16829FFB00434C0B /* bottomtext@2x */,
-				916A8E6D16829FFB00434C0B /* toptext.png */,
-				916A8E6E16829FFB00434C0B /* toptext@2x.png */,
+				2A8D6D681682A08C0067EFD1 /* Text Fields */,
 				918513CE1682929E0078B9EC /* profile icons */,
 				2A8713A916814B4100741FE7 /* Buttons */,
 				2A2342DF167E3734004769FF /* Nav Bar */,
@@ -480,6 +492,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A8D6D6A1682A0FC0067EFD1 /* toptext.png in Resources */,
+				2A8D6D6B1682A0FC0067EFD1 /* toptext@2x.png in Resources */,
+				2A8D6D6C1682A0FC0067EFD1 /* bottomtext@2x.png in Resources */,
+				2A8D6D6D1682A0FC0067EFD1 /* bottomtext.png in Resources */,
 				2A8DA7BE16701D6200A105F6 /* InfoPlist.strings in Resources */,
 				2A8DA7C616701D6200A105F6 /* Default.png in Resources */,
 				2A8DA7C816701D6200A105F6 /* Default@2x.png in Resources */,
