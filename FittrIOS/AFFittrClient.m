@@ -1,6 +1,6 @@
 #import "AFFittrClient.h"
 
-static NSString * const kAFFittrAPIBaseURLString = @"http://fittr.com:3000/";
+static NSString * const kAFFittrAPIBaseURLString = @"http://fittr.com/";
 static NSString *const kAFFittrAPICheckUserPath = @"User/checkUser";
 
 @implementation AFFittrClient
