@@ -1,6 +1,7 @@
 #import "AFFittrClient.h"
 
-static NSString * const kAFFittrAPIBaseURLString = @"https://alpha-api.app.net/";
+static NSString * const kAFFittrAPIBaseURLString = @"http://fittr.com:3000/";
+static NSString *const kAFFittrAPICheckUserPath = @"User/checkUser";
 
 @implementation AFFittrClient
 
@@ -30,28 +31,9 @@ static NSString * const kAFFittrAPIBaseURLString = @"https://alpha-api.app.net/"
     return self;
 }
 
--(AFFittrClient*)init {
-    self = [super init];
-    
-    if(self != nil){
-        user = nil;
-        
-        [self registerHTTPOperationClass:[AFJSONRequestOperation class]];
-        
-        // Accept HTTP Header; see http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.1
-        [self setDefaultHeader:@"Accept" value:@"application/json"];
-    }
-    
-    return self;
-}
-
--(BOOL)isAuthorized {
-    return[[user objectForKey:@"IdUser"] intValue]>0;
-}
-
--(void)commandWithParams:(NSMutableDictionary*)params onCompletion:(JSONResponseBlock)completionBlock {
+-(void)commandWithParams:(NSMutableDictionary*)params forPath: (NSString *)path onCompletion:(JSONResponseBlock)completionBlock {
     NSMutableURLRequest*apiRequest =[self multipartFormRequestWithMethod:@"POST"
-                                                                    path:kAFFittrAPIBaseURLString
+                                                                    path:path
                                                               parameters:params
                                                constructingBodyWithBlock:^(id <AFMultipartFormData>formData){
                                                    //TODO: attach file if needed
@@ -66,6 +48,18 @@ static NSString * const kAFFittrAPIBaseURLString = @"https://alpha-api.app.net/"
     }];
     
     [operation start];
+}
+
+-(void)checkUserWithUsername: (NSString *)username andPassword: (NSString *)password {
+    NSMutableDictionary* params =[NSMutableDictionary dictionaryWithObjectsAndKeys:
+                                  username, @"username",
+                                  password, @"password",
+                                  nil];
+    
+    //make the call to the web API
+    [[AFFittrClient sharedClient] commandWithParams:params forPath:kAFFittrAPICheckUserPath
+        onCompletion:^(NSDictionary*json){
+    }];
 }
 
 @end

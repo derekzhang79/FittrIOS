@@ -10,11 +10,11 @@ typedef void(^JSONResponseBlock)(NSDictionary* json);
 //the authorized user
 @property(strong, nonatomic)NSDictionary* user;
 
-//check whether there's an authorized user
--(BOOL)isAuthorized;
-
-//send an API command to the server
+//Send an API command to the server
 -(void)commandWithParams:(NSMutableDictionary*)params onCompletion:(JSONResponseBlock)completionBlock;
+
+//Check if user exists
+-(void)checkUserWithUsername: (NSString *)username andPassword: (NSString *)password;
 
 + (AFFittrClient *)sharedClient;
 
