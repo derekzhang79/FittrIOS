@@ -50,6 +50,22 @@ static NSString * const kAFFittrAPIBaseURLString = @"https://alpha-api.app.net/"
 }
 
 -(void)commandWithParams:(NSMutableDictionary*)params onCompletion:(JSONResponseBlock)completionBlock {
+    NSMutableURLRequest*apiRequest =[self multipartFormRequestWithMethod:@"POST"
+                                                                    path:kAFFittrAPIBaseURLString
+                                                              parameters:params
+                                               constructingBodyWithBlock:^(id <AFMultipartFormData>formData){
+                                                   //TODO: attach file if needed
+                                               }];
+    
+    AFJSONRequestOperation* operation =[[AFJSONRequestOperation alloc] initWithRequest: apiRequest];
+    [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject){
+        //success!
+        completionBlock(responseObject);
+    } failure:^(AFHTTPRequestOperation *operation, NSError*error){//failure :(
+        completionBlock([NSDictionary dictionaryWithObject:[error localizedDescription] forKey:@"error"]);
+    }];
+    
+    [operation start];
 }
 
 @end
