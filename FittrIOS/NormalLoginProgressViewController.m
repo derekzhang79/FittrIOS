@@ -10,8 +10,14 @@
 
 @implementation NormalLoginProgressViewController
 
+@synthesize username;
+@synthesize password;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    AFFittrClient *client = [AFFittrClient sharedClient];
+    [client checkUserWithUsername:username andPassword:password];
 }
 
 - (IBAction)back:(id)sender {

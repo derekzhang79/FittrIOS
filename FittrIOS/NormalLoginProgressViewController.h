@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AFFittrClient.h"
 
 @interface NormalLoginProgressViewController : UIViewController
 - (IBAction)back:(id)sender;
+
+@property (nonatomic, strong) NSString *username;
+@property (nonatomic, strong) NSString *password;
 
 @end

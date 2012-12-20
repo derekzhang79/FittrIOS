@@ -39,6 +39,14 @@
 - (IBAction)login:(id)sender {
     //If username and password are filled out, move along
     if ([[username text] length] && [[password text] length])
-        [self performSegueWithIdentifier:@"login" sender:Nil];
+        [self performSegueWithIdentifier:@"attemptLogin" sender:Nil];
 }
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([[segue identifier] isEqualToString:@"attemptLogin"]) {
+        [[segue destinationViewController] setUsername: username.text];
+        [[segue destinationViewController] setPassword: password.text];
+    }
+}
+
 @end
