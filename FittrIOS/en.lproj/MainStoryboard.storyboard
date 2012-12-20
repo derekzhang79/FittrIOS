@@ -369,7 +369,13 @@
                                     <action selector="login:" destination="4q5-VC-9Gf" eventType="touchUpInside" id="4EP-Ru-QyX"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" placeholder="Username" minimumFontSize="17" background="toptext.png" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="5cJ-Pr-JDX">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="fulltext.png" translatesAutoresizingMaskIntoConstraints="NO" id="Mce-fe-fzN">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="GSV-bv-6G4"/>
+                                    <constraint firstAttribute="width" constant="287" id="eCb-5a-rhp"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" placeholder="Username" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="5cJ-Pr-JDX">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="K5G-5s-HIK"/>
                                 </constraints>
@@ -379,7 +385,7 @@
                                     <outlet property="delegate" destination="4q5-VC-9Gf" id="Orv-pV-1kj"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" placeholder="Pasword" minimumFontSize="17" background="bottomtext.png" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="dQ3-TL-QJV">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" placeholder="Pasword" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="dQ3-TL-QJV">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="DK8-ts-nHF"/>
                                 </constraints>
@@ -394,16 +400,18 @@
                         <constraints>
                             <constraint firstItem="laq-bR-rfd" firstAttribute="trailing" secondItem="Jkq-EZ-PhC" secondAttribute="trailing" type="default" id="3R5-R2-IXW"/>
                             <constraint firstAttribute="trailing" secondItem="5cJ-Pr-JDX" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="54c-wH-XbI"/>
+                            <constraint firstItem="dQ3-TL-QJV" firstAttribute="top" secondItem="Jkq-EZ-PhC" secondAttribute="top" constant="53" id="DpH-6P-uvA"/>
+                            <constraint firstItem="5cJ-Pr-JDX" firstAttribute="top" secondItem="Jkq-EZ-PhC" secondAttribute="top" constant="26" id="GFx-p0-6Dz"/>
                             <constraint firstAttribute="trailing" secondItem="dQ3-TL-QJV" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="GH8-vS-BT7"/>
                             <constraint firstItem="laq-bR-rfd" firstAttribute="leading" secondItem="Jkq-EZ-PhC" secondAttribute="leading" type="default" id="NWR-4S-dzX"/>
                             <constraint firstItem="laq-bR-rfd" firstAttribute="bottom" secondItem="Jkq-EZ-PhC" secondAttribute="bottom" type="default" id="Nwd-ru-lc8"/>
                             <constraint firstItem="koX-Th-esy" firstAttribute="leading" secondItem="Jkq-EZ-PhC" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Ojf-XO-gnE"/>
-                            <constraint firstItem="dQ3-TL-QJV" firstAttribute="top" secondItem="Jkq-EZ-PhC" secondAttribute="top" constant="58" id="Pas-Fv-bch"/>
                             <constraint firstItem="koX-Th-esy" firstAttribute="top" secondItem="Jkq-EZ-PhC" secondAttribute="top" constant="129" id="amU-lc-65f"/>
                             <constraint firstItem="dQ3-TL-QJV" firstAttribute="leading" secondItem="Jkq-EZ-PhC" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="bU6-Ca-wHM"/>
+                            <constraint firstAttribute="trailing" secondItem="Mce-fe-fzN" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="gmY-ze-uH2"/>
                             <constraint firstAttribute="trailing" secondItem="koX-Th-esy" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="i8G-K4-Fqm"/>
-                            <constraint firstItem="5cJ-Pr-JDX" firstAttribute="top" secondItem="Jkq-EZ-PhC" secondAttribute="top" constant="27" id="mXW-Gi-WIe"/>
                             <constraint firstItem="5cJ-Pr-JDX" firstAttribute="leading" secondItem="Jkq-EZ-PhC" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="r6d-kX-d8o"/>
+                            <constraint firstItem="Mce-fe-fzN" firstAttribute="top" secondItem="Jkq-EZ-PhC" secondAttribute="top" constant="20" symbolic="YES" type="default" id="tl4-p7-grc"/>
                             <constraint firstItem="laq-bR-rfd" firstAttribute="top" secondItem="Jkq-EZ-PhC" secondAttribute="top" type="default" id="vpg-WI-glH"/>
                         </constraints>
                     </view>
@@ -800,9 +808,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bottomtext.png" width="286" height="45"/>
         <image name="connectwfb@2x.png" width="492" height="90"/>
         <image name="feedtab.png" width="33" height="24"/>
+        <image name="fulltext.png" width="286" height="88"/>
         <image name="iristab.png" width="25" height="14"/>
         <image name="loginbg.png" width="640" height="1013"/>
         <image name="logo@2x.png" width="534" height="347"/>
@@ -811,10 +819,46 @@
         <image name="silver-button-pressed@2x.png" width="612" height="93"/>
         <image name="startworkout@2x.png" width="600" height="125"/>
         <image name="startworkoutclick@2x.png" width="600" height="125"/>
-        <image name="toptext.png" width="286" height="43"/>
         <image name="workouttab.png" width="28" height="18"/>
         <image name="youtab.png" width="28" height="26"/>
     </resources>
+    <classes>
+        <class className="LoginSelectionController" superclassName="ViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LoginSelectionController.h"/>
+            <relationships>
+                <relationship kind="action" name="getTweets:"/>
+                <relationship kind="action" name="loginNormally:"/>
+                <relationship kind="action" name="loginWithFacebook:"/>
+                <relationship kind="outlet" name="logo" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="NormalLoginProgressViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NormalLoginProgressViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="back:"/>
+            </relationships>
+        </class>
+        <class className="NormalLoginViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NormalLoginViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="login:"/>
+                <relationship kind="outlet" name="password" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="username" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="SettingsViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SettingsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="signOut:"/>
+            </relationships>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
