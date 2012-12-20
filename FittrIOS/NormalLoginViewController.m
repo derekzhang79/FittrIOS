@@ -50,7 +50,6 @@
     if ([[segue identifier] isEqualToString:@"attemptLogin"]) {
         [[segue destinationViewController] setUsername: username.text];
         [[segue destinationViewController] setPassword: password.text];
-        [[segue destinationViewController] setNormalLoginView: self];
     }
 }
 

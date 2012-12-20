@@ -627,7 +627,7 @@
                     <navigationItem key="navigationItem" title="Settings" id="7FE-me-hXC">
                         <barButtonItem key="rightBarButtonItem" title="Sign Out" id="yme-TG-dh6">
                             <connections>
-                                <action selector="signOut:" destination="RaY-cS-CcR" id="ZcJ-Tx-aeV"/>
+                                <segue destination="vOV-SB-VfK" kind="modal" modalTransitionStyle="flipHorizontal" id="so6-i9-pce"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -857,9 +857,6 @@
         </class>
         <class className="SettingsViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SettingsViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="signOut:"/>
-            </relationships>
         </class>
         <class className="ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
