@@ -38,7 +38,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UTU-e6-F2h">
                                 <constraints>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="49" type="user" id="pZK-z4-hVC"/>
-                                    <constraint firstAttribute="height" constant="49" id="ypQ-Kc-ZlP"/>
+                                    <constraint firstAttribute="height" constant="49" type="user" id="ypQ-Kc-ZlP"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Login with Fittr details" backgroundImage="roundrectbg.png">
@@ -76,22 +76,33 @@
                                 <color key="textColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="orgraphic@2x.png" translatesAutoresizingMaskIntoConstraints="NO" id="Lfd-vz-gw1">
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="16" type="user" id="k1h-zx-eVl"/>
+                                    <constraint firstAttribute="width" constant="119" id="xOU-n1-CkD"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ra9-fO-EWX" firstAttribute="top" relation="greaterThanOrEqual" secondItem="3" secondAttribute="top" constant="183" type="user" id="9RV-2B-7YD"/>
-                            <constraint firstItem="UAR-9D-KPc" firstAttribute="top" secondItem="3" secondAttribute="top" constant="336" type="user" id="Dza-K0-7aR"/>
+                            <constraint firstItem="Lfd-vz-gw1" firstAttribute="top" secondItem="3" secondAttribute="top" constant="250" type="user" id="25l-rS-zjM"/>
+                            <constraint firstItem="Lfd-vz-gw1" firstAttribute="centerX" secondItem="UTU-e6-F2h" secondAttribute="centerX" type="default" id="3jj-Nv-Say"/>
+                            <constraint firstItem="ra9-fO-EWX" firstAttribute="top" relation="greaterThanOrEqual" secondItem="3" secondAttribute="top" constant="183" type="user" id="5yS-yG-0Dr"/>
+                            <constraint firstItem="ra9-fO-EWX" firstAttribute="top" secondItem="3" secondAttribute="top" constant="183" type="user" id="9AV-bQ-wbD"/>
                             <constraint firstItem="4w4-EA-ymb" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="FdW-pG-RVl"/>
-                            <constraint firstItem="UTU-e6-F2h" firstAttribute="top" secondItem="3" secondAttribute="top" constant="264" type="user" id="Mzx-34-oMd"/>
+                            <constraint firstItem="UAR-9D-KPc" firstAttribute="top" secondItem="UTU-e6-F2h" secondAttribute="bottom" constant="8" symbolic="YES" type="user" id="Gih-nr-aOu"/>
+                            <constraint firstItem="UAR-9D-KPc" firstAttribute="top" secondItem="3" secondAttribute="top" constant="336" type="user" id="Gmo-sr-qAL"/>
                             <constraint firstItem="faf-b2-dRe" firstAttribute="top" secondItem="3" secondAttribute="top" constant="13" id="Of4-cg-uEK"/>
                             <constraint firstAttribute="trailing" secondItem="UTU-e6-F2h" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Ph9-Iq-BZn"/>
                             <constraint firstAttribute="trailing" secondItem="ra9-fO-EWX" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="ShM-do-XKG"/>
                             <constraint firstItem="UTU-e6-F2h" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Vtd-Ft-ZlO"/>
                             <constraint firstItem="4w4-EA-ymb" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="W4n-kt-LIb"/>
                             <constraint firstItem="faf-b2-dRe" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="ZKd-iJ-1Dx"/>
-                            <constraint firstItem="ra9-fO-EWX" firstAttribute="top" secondItem="3" secondAttribute="top" constant="183" id="apg-pp-n5g"/>
+                            <constraint firstItem="UTU-e6-F2h" firstAttribute="top" secondItem="3" secondAttribute="top" constant="279" type="user" id="aCe-Ls-NUz"/>
                             <constraint firstItem="UAR-9D-KPc" firstAttribute="centerX" secondItem="UTU-e6-F2h" secondAttribute="centerX" type="default" id="fEl-CQ-ROk"/>
+                            <constraint firstItem="ra9-fO-EWX" firstAttribute="top" relation="lessThanOrEqual" secondItem="3" secondAttribute="top" constant="183" type="user" id="hH8-hZ-HB8"/>
                             <constraint firstItem="4w4-EA-ymb" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="iP5-UI-RPn"/>
+                            <constraint firstAttribute="bottom" secondItem="UAR-9D-KPc" secondAttribute="bottom" constant="43" type="user" id="pJF-mT-K2j"/>
                             <constraint firstItem="ra9-fO-EWX" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="sRL-ur-hN4"/>
                             <constraint firstAttribute="trailing" secondItem="faf-b2-dRe" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="ux0-Xb-yim"/>
                             <constraint firstItem="4w4-EA-ymb" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="w8y-ln-hRF"/>
@@ -823,6 +834,7 @@
         <image name="iristab.png" width="25" height="14"/>
         <image name="loginbg.png" width="640" height="1013"/>
         <image name="logo@2x.png" width="534" height="347"/>
+        <image name="orgraphic@2x.png" width="237" height="32"/>
         <image name="roundrectbg.png" width="278" height="46"/>
         <image name="settingstab.png" width="29" height="29"/>
         <image name="silver-button-pressed@2x.png" width="612" height="93"/>
@@ -836,7 +848,6 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LoginSelectionController.h"/>
             <relationships>
                 <relationship kind="action" name="getTweets:"/>
-                <relationship kind="action" name="loginNormally:"/>
                 <relationship kind="action" name="loginWithFacebook:"/>
                 <relationship kind="outlet" name="logo" candidateClass="UIImageView"/>
             </relationships>
