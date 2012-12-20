@@ -11,5 +11,6 @@
 @implementation SettingsViewController 
 
 - (IBAction)signOut:(id)sender {
+    [self dismissViewControllerAnimated:TRUE completion:Nil];
 }
 @end
