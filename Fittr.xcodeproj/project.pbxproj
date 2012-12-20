@@ -407,12 +407,7 @@
 		2AF13CD91670203B00B04ABB /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				916A8E701682A1D400434C0B /* fullfield.png */,
-				916A8E711682A1D400434C0B /* fullfield@2x.png */,
-				916A8E6B16829FFB00434C0B /* bottomtext.png */,
-				916A8E6C16829FFB00434C0B /* bottomtext@2x */,
-				916A8E6D16829FFB00434C0B /* toptext.png */,
-				916A8E6E16829FFB00434C0B /* toptext@2x.png */,
+				2A8D6D681682A08C0067EFD1 /* Text Fields */,
 				918513CE1682929E0078B9EC /* profile icons */,
 				2A8713A916814B4100741FE7 /* Buttons */,
 				2A2342DF167E3734004769FF /* Nav Bar */,
