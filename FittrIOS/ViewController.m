@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "AFNetworking.h"
+#import "AFFittrClient.h"
 
 @interface ViewController ()
 
@@ -18,6 +20,18 @@
 {
     [super viewDidLoad];
 	NSLog(@"Hello World!");
+    
+    NSURL *url = [NSURL URLWithString:@"http://httpbin.org/ip"];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    
+    AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
+        NSLog(@"IP Address: %@", [JSON valueForKeyPath:@"origin"]);
+    } failure:nil];
+    
+    [operation start];
+    
+    AFFittrClient *client = [AFFittrClient sharedClient];
+    
 }
 
 - (void)didReceiveMemoryWarning
