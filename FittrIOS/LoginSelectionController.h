@@ -11,7 +11,6 @@
 
 @interface LoginSelectionController : ViewController <NSURLConnectionDelegate>
 
-- (IBAction)loginWithFacebook:(id)sender;
 - (IBAction)getTweets:(id)sender;
 
 @property (weak, nonatomic) IBOutlet UIImageView *logo;

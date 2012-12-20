@@ -27,7 +27,7 @@
         [self performSegueWithIdentifier:@"login" sender:Nil];
     } else {
         [self dismissViewControllerAnimated:TRUE completion:Nil];
-        [[[UIAlertView alloc] initWithTitle:@"Error!" message:@"Sorry, the username or password you provided was not valid." delegate:Nil cancelButtonTitle:@"Ok" otherButtonTitles:Nil] show];
+        [[[UIAlertView alloc] initWithTitle:@"Error!" message:@"Sorry, the username or password you provided was not valid." delegate:Nil cancelButtonTitle:@"Argh!" otherButtonTitles:Nil] show];
     }
 }
 

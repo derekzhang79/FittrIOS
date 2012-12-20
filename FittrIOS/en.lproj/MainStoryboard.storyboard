@@ -65,7 +65,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="loginWithFacebook:" destination="2" eventType="touchUpInside" id="aNH-sN-Low"/>
+                                    <segue destination="a3B-8V-MDV" kind="modal" modalTransitionStyle="crossDissolve" id="pfz-YN-Ic1"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Forgot Password?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UAR-9D-KPc">
@@ -435,6 +435,7 @@
         <scene sceneID="Ouk-Iu-fzV">
             <objects>
                 <tabBarController definesPresentationContext="YES" id="JJX-wP-aqr" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ltv-x3-BzA"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="d4o-g5-o9J">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
@@ -811,6 +812,35 @@
             </objects>
             <point key="canvasLocation" x="1558" y="2709"/>
         </scene>
+        <!--Facebook Login Progress View Controller-->
+        <scene sceneID="GjT-uI-J4A">
+            <objects>
+                <viewController id="a3B-8V-MDV" customClass="FacebookLoginProgressViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fLW-UU-Vnh">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="loginbg.png" translatesAutoresizingMaskIntoConstraints="NO" id="9a2-6v-J7d"/>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="DVZ-Yp-Zma"/>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="DVZ-Yp-Zma" secondAttribute="centerX" type="user" id="523-5e-jSt"/>
+                            <constraint firstItem="9a2-6v-J7d" firstAttribute="top" secondItem="fLW-UU-Vnh" secondAttribute="top" type="default" id="IBK-dV-qsa"/>
+                            <constraint firstAttribute="centerY" secondItem="DVZ-Yp-Zma" secondAttribute="centerY" type="user" id="Qv4-Vx-qxA"/>
+                            <constraint firstItem="9a2-6v-J7d" firstAttribute="trailing" secondItem="fLW-UU-Vnh" secondAttribute="trailing" type="default" id="VZ8-Zx-bst"/>
+                            <constraint firstItem="DVZ-Yp-Zma" firstAttribute="centerY" secondItem="9a2-6v-J7d" secondAttribute="centerY" type="default" id="ajX-Zx-VHN"/>
+                            <constraint firstItem="9a2-6v-J7d" firstAttribute="leading" secondItem="fLW-UU-Vnh" secondAttribute="leading" type="default" id="v6i-KV-VPW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="JJX-wP-aqr" kind="modal" identifier="login" modalTransitionStyle="flipHorizontal" id="1g6-tV-lBh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t1H-qN-YNR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="227" y="-115"/>
+        </scene>
     </scenes>
     <resources>
         <image name="connectwfb@2x.png" width="492" height="90"/>
@@ -832,12 +862,13 @@
         <image name="youtab.png" width="28" height="26"/>
     </resources>
     <classes>
+        <class className="FacebookLoginProgressViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FacebookLoginProgressViewController.h"/>
+        </class>
         <class className="LoginSelectionController" superclassName="ViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LoginSelectionController.h"/>
             <relationships>
                 <relationship kind="action" name="getTweets:"/>
-                <relationship kind="action" name="loginNormally:"/>
-                <relationship kind="action" name="loginWithFacebook:"/>
                 <relationship kind="outlet" name="logo" candidateClass="UIImageView"/>
             </relationships>
         </class>
@@ -868,6 +899,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="iZh-fC-kri"/>
+        <segue reference="1g6-tV-lBh"/>
     </inferredMetricsTieBreakers>
 </document>
