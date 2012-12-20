@@ -386,7 +386,7 @@
                                     <constraint firstAttribute="height" constant="30" id="K5G-5s-HIK"/>
                                 </constraints>
                                 <attributedString key="attributedText"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next"/>
                                 <connections>
                                     <outlet property="delegate" destination="4q5-VC-9Gf" id="Orv-pV-1kj"/>
                                 </connections>
@@ -396,7 +396,7 @@
                                     <constraint firstAttribute="height" constant="30" id="DK8-ts-nHF"/>
                                 </constraints>
                                 <attributedString key="attributedText"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done" secureTextEntry="YES"/>
                                 <connections>
                                     <outlet property="delegate" destination="4q5-VC-9Gf" id="Rg7-yl-ZqF"/>
                                 </connections>

@@ -12,12 +12,8 @@
 
 @synthesize username;
 @synthesize password;
-@synthesize errorMessage;
 
 - (void)viewDidLoad {
-    //Setup error handling
-    errorMessage = [[NSString alloc] init];
-    
     //Setup keyboard nexting
     username.tag = 0;
     password.tag = 1;

@@ -12,7 +12,6 @@
 @interface NormalLoginViewController : UIViewController <UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *username;
 @property (weak, nonatomic) IBOutlet UITextField *password;
-@property (weak, nonatomic) NSString *errorMessage;
 
 - (IBAction)login:(id)sender;
 
